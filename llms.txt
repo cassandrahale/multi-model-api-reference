@@ -1,0 +1,8 @@
+# GPT-6 Sol — Argolink
+
+- Model: gpt-6-sol
+- Intent: multi-model API reference and capability matrix
+- Model page: https://argolink.io/gh-multi-model-api-reference
+- API docs: https://argolink.io/gh-unified-api-docs
+- Examples: examples/request.sh, examples/client.py
+- Contract: docs/model-contract.md
