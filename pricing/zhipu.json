@@ -1,0 +1,121 @@
+{
+ "provider": "zhipu",
+ "fetched": "2026-10-07",
+ "models": {
+  "glm-5.1": {
+   "category": "chat",
+   "price": {
+    "currency": "USD",
+    "unit": "per_1m_tokens",
+    "input": 1.12,
+    "output": 3.52,
+    "cached_input": 0.208
+   },
+   "list_price": {
+    "currency": "USD",
+    "unit": "per_1m_tokens",
+    "input": 1.4,
+    "output": 4.4,
+    "cached_input": 0.26
+   },
+   "discount_vs_list": 0.2,
+   "billing_rules": [
+    {
+     "rule": "reasoning_tokens_billed_as_output"
+    }
+   ]
+  },
+  "glm-5.2": {
+   "category": "chat",
+   "price": {
+    "currency": "USD",
+    "unit": "per_1m_tokens",
+    "input": 1.12,
+    "output": 3.52,
+    "cached_input": 0.208
+   },
+   "list_price": {
+    "currency": "USD",
+    "unit": "per_1m_tokens",
+    "input": 1.4,
+    "output": 4.4,
+    "cached_input": 0.26
+   },
+   "discount_vs_list": 0.2,
+   "billing_rules": [
+    {
+     "rule": "reasoning_tokens_billed_as_output"
+    }
+   ]
+  },
+  "glm-5.3": {
+   "category": "chat",
+   "price": {
+    "currency": "USD",
+    "unit": "per_1m_tokens",
+    "input": 1.12,
+    "output": 3.52,
+    "cached_input": 0.208
+   },
+   "list_price": {
+    "currency": "USD",
+    "unit": "per_1m_tokens",
+    "input": 1.4,
+    "output": 4.4,
+    "cached_input": 0.26
+   },
+   "discount_vs_list": 0.2,
+   "billing_rules": [
+    {
+     "rule": "reasoning_tokens_billed_as_output"
+    }
+   ]
+  },
+  "glm-5.3-flash": {
+   "category": "chat",
+   "price": {
+    "currency": "USD",
+    "unit": "per_1m_tokens",
+    "input": 0.12,
+    "output": 0.4,
+    "cached_input": 0.024
+   },
+   "list_price": {
+    "currency": "USD",
+    "unit": "per_1m_tokens",
+    "input": 0.15,
+    "output": 0.5,
+    "cached_input": 0.03
+   },
+   "discount_vs_list": 0.2,
+   "billing_rules": [
+    {
+     "rule": "reasoning_tokens_billed_as_output"
+    }
+   ]
+  },
+  "glm-5.3-flashx": {
+   "category": "chat",
+   "price": {
+    "currency": "USD",
+    "unit": "per_1m_tokens",
+    "input": 0.296,
+    "output": 1,
+    "cached_input": 0.06
+   },
+   "list_price": {
+    "currency": "USD",
+    "unit": "per_1m_tokens",
+    "input": 0.37,
+    "output": 1.25,
+    "cached_input": 0.075
+   },
+   "discount_vs_list": 0.2,
+   "billing_rules": [
+    {
+     "rule": "reasoning_tokens_billed_as_output"
+    }
+   ]
+  }
+ }
+}

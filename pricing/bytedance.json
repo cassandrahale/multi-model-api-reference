@@ -1,0 +1,202 @@
+{
+ "provider": "bytedance",
+ "fetched": "2026-10-07",
+ "models": {
+  "seedance-2.0": {
+   "category": "video",
+   "price": {
+    "currency": "USD",
+    "unit": "per_output_second",
+    "tiers": [
+     {
+      "tier": "480p",
+      "usd": 0.053
+     },
+     {
+      "tier": "720p",
+      "usd": 0.11
+     },
+     {
+      "tier": "1080p",
+      "usd": 0.28
+     },
+     {
+      "tier": "4k",
+      "usd": 0.58
+     }
+    ]
+   },
+   "list_price": {
+    "currency": "USD",
+    "unit": "per_output_second",
+    "tiers": [
+     {
+      "tier": "480p",
+      "usd": 0.0703
+     },
+     {
+      "tier": "720p",
+      "usd": 0.1512
+     },
+     {
+      "tier": "1080p",
+      "usd": 0.3742
+     },
+     {
+      "tier": "4k",
+      "usd": 0.7691
+     }
+    ]
+   },
+   "discount_vs_list": 0.25,
+   "billing_rules": [
+    {
+     "rule": "per_output_second"
+    },
+    {
+     "rule": "reference_video_seconds_billed"
+    },
+    {
+     "rule": "failed_or_expired_not_billed"
+    }
+   ]
+  },
+  "seedance-2.0-fast": {
+   "category": "video",
+   "price": {
+    "currency": "USD",
+    "unit": "per_output_second",
+    "tiers": [
+     {
+      "tier": "480p",
+      "usd": 0.042
+     },
+     {
+      "tier": "720p",
+      "usd": 0.091
+     }
+    ]
+   },
+   "list_price": {
+    "currency": "USD",
+    "unit": "per_output_second",
+    "tiers": [
+     {
+      "tier": "480p",
+      "usd": 0.0562
+     },
+     {
+      "tier": "720p",
+      "usd": 0.121
+     }
+    ]
+   },
+   "discount_vs_list": 0.25,
+   "billing_rules": [
+    {
+     "rule": "per_output_second"
+    },
+    {
+     "rule": "reference_video_seconds_billed"
+    },
+    {
+     "rule": "failed_or_expired_not_billed"
+    }
+   ]
+  },
+  "seedance-2.0-mini": {
+   "category": "video",
+   "price": {
+    "currency": "USD",
+    "unit": "per_output_second",
+    "tiers": [
+     {
+      "tier": "480p",
+      "usd": 0.026
+     },
+     {
+      "tier": "720p",
+      "usd": 0.057
+     }
+    ]
+   },
+   "list_price": {
+    "currency": "USD",
+    "unit": "per_output_second",
+    "tiers": [
+     {
+      "tier": "480p",
+      "usd": 0.0352
+     },
+     {
+      "tier": "720p",
+      "usd": 0.0756
+     }
+    ]
+   },
+   "discount_vs_list": 0.25,
+   "billing_rules": [
+    {
+     "rule": "per_output_second"
+    },
+    {
+     "rule": "reference_video_seconds_billed"
+    },
+    {
+     "rule": "failed_or_expired_not_billed"
+    }
+   ]
+  },
+  "seedance-2.5": {
+   "category": "video",
+   "price": {
+    "currency": "USD",
+    "unit": "per_output_second",
+    "tiers": [
+     {
+      "tier": "480p",
+      "usd": 0.0874
+     },
+     {
+      "tier": "720p",
+      "usd": 0.196
+     },
+     {
+      "tier": "1080p",
+      "usd": 0.483
+     }
+    ]
+   },
+   "list_price": {
+    "currency": "USD",
+    "unit": "per_output_second",
+    "tiers": [
+     {
+      "tier": "480p",
+      "usd": 0.1028
+     },
+     {
+      "tier": "720p",
+      "usd": 0.2311
+     },
+     {
+      "tier": "1080p",
+      "usd": 0.5686
+     }
+    ]
+   },
+   "discount_vs_list": 0.15,
+   "billing_rules": [
+    {
+     "rule": "per_output_second"
+    },
+    {
+     "rule": "reference_video_seconds_billed"
+    },
+    {
+     "rule": "failed_or_expired_not_billed"
+    }
+   ]
+  }
+ }
+}

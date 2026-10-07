@@ -1,0 +1,204 @@
+{
+ "source": "https://argolink.io/en/models/{id} (Endpoints section)",
+ "fetched": "2026-10-07",
+ "endpoints": {
+  "claude-fable-5": [
+   "/v1/chat/completions",
+   "/v1/messages",
+   "/v1/responses"
+  ],
+  "claude-fable-5-1": [
+   "/v1/chat/completions",
+   "/v1/messages",
+   "/v1/responses"
+  ],
+  "claude-opus-4-8": [
+   "/v1/chat/completions",
+   "/v1/messages",
+   "/v1/responses"
+  ],
+  "claude-opus-5": [
+   "/v1/chat/completions",
+   "/v1/messages",
+   "/v1/responses"
+  ],
+  "claude-opus-5-5": [
+   "/v1/chat/completions",
+   "/v1/messages",
+   "/v1/responses"
+  ],
+  "claude-sonnet-5": [
+   "/v1/chat/completions",
+   "/v1/messages",
+   "/v1/responses"
+  ],
+  "deepseek-v4-pro": [
+   "/v1/chat/completions",
+   "/v1/messages",
+   "/v1/responses"
+  ],
+  "deepseek-v4.1-flash": [
+   "/v1/chat/completions",
+   "/v1/messages",
+   "/v1/responses"
+  ],
+  "glm-5.1": [
+   "/v1/chat/completions",
+   "/v1/messages",
+   "/v1/responses"
+  ],
+  "glm-5.2": [
+   "/v1/chat/completions",
+   "/v1/messages",
+   "/v1/responses"
+  ],
+  "glm-5.3": [
+   "/v1/chat/completions",
+   "/v1/messages",
+   "/v1/responses"
+  ],
+  "glm-5.3-flash": [
+   "/v1/chat/completions",
+   "/v1/messages",
+   "/v1/responses"
+  ],
+  "glm-5.3-flashx": [
+   "/v1/chat/completions",
+   "/v1/messages",
+   "/v1/responses"
+  ],
+  "gpt-5.4": [
+   "/v1/chat/completions",
+   "/v1/responses"
+  ],
+  "gpt-5.4-mini": [
+   "/v1/chat/completions",
+   "/v1/responses"
+  ],
+  "gpt-5.5": [
+   "/v1/chat/completions",
+   "/v1/responses"
+  ],
+  "gpt-5.6-luna": [
+   "/v1/chat/completions",
+   "/v1/responses"
+  ],
+  "gpt-5.6-sol": [
+   "/v1/chat/completions",
+   "/v1/responses"
+  ],
+  "gpt-5.6-terra": [
+   "/v1/chat/completions",
+   "/v1/responses"
+  ],
+  "gpt-6-astra": [
+   "/v1/chat/completions",
+   "/v1/responses"
+  ],
+  "gpt-6-sol": [
+   "/v1/chat/completions",
+   "/v1/responses"
+  ],
+  "gpt-6.1-sol": [
+   "/v1/chat/completions",
+   "/v1/responses"
+  ],
+  "gpt-image-2": [
+   "/v1/images/edits",
+   "/v1/images/generations"
+  ],
+  "gpt-image-2.5-flare": [
+   "/v1/images/edits",
+   "/v1/images/generations"
+  ],
+  "gpt-image-2.5-sunburst": [
+   "/v1/images/edits",
+   "/v1/images/generations"
+  ],
+  "grok-4.5": [
+   "/v1/chat/completions",
+   "/v1/messages",
+   "/v1/responses"
+  ],
+  "grok-4.6": [
+   "/v1/chat/completions",
+   "/v1/messages",
+   "/v1/responses"
+  ],
+  "grok-4.7": [
+   "/v1/chat/completions",
+   "/v1/messages",
+   "/v1/responses"
+  ],
+  "grok-imagine-image": [
+   "/v1/images/edits",
+   "/v1/images/generations"
+  ],
+  "grok-imagine-image-2.0": [
+   "/v1/images/edits",
+   "/v1/images/generations"
+  ],
+  "grok-imagine-image-quality": [
+   "/v1/images/edits",
+   "/v1/images/generations"
+  ],
+  "grok-imagine-video-1.5": [
+   "/v1/videos/generations"
+  ],
+  "kimi-k2.6": [
+   "/v1/chat/completions",
+   "/v1/messages",
+   "/v1/responses"
+  ],
+  "kimi-k2.7-code": [
+   "/v1/chat/completions",
+   "/v1/messages",
+   "/v1/responses"
+  ],
+  "kimi-k3": [
+   "/v1/chat/completions",
+   "/v1/messages",
+   "/v1/responses"
+  ],
+  "minimax-h3": [
+   "/v1/media/uploads",
+   "/v1/videos/generations"
+  ],
+  "nano-banana-2": [
+   "/v1/images/edits",
+   "/v1/images/generations"
+  ],
+  "nano-banana-2-lite": [
+   "/v1/images/edits",
+   "/v1/images/generations"
+  ],
+  "nano-banana-pro": [
+   "/v1/images/edits",
+   "/v1/images/generations"
+  ],
+  "seedance-2.0": [
+   "/v1/media/uploads",
+   "/v1/videos/generations"
+  ],
+  "seedance-2.0-fast": [
+   "/v1/media/uploads",
+   "/v1/videos/generations"
+  ],
+  "seedance-2.0-mini": [
+   "/v1/media/uploads",
+   "/v1/videos/generations"
+  ],
+  "seedance-2.5": [
+   "/v1/media/uploads",
+   "/v1/videos/generations"
+  ],
+  "wan-3": [
+   "/v1/media/uploads",
+   "/v1/videos/generations"
+  ],
+  "wan-3-prime": [
+   "/v1/media/uploads",
+   "/v1/videos/generations"
+  ]
+ }
+}

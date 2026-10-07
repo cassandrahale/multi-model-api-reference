@@ -1,0 +1,2802 @@
+{
+ "schema": "schema/model.schema.json",
+ "source": "https://argolink.io/api/catalog/v1/models?page_size=100",
+ "fetched": "2026-10-07",
+ "catalog_revision": "0315cdd070b19ded",
+ "count": 45,
+ "models": [
+  {
+   "id": "gpt-5.4",
+   "name": "GPT-5.4",
+   "provider": "openai",
+   "category": "chat",
+   "recommended_endpoint": "/v1/responses",
+   "endpoints": [
+    "/v1/chat/completions",
+    "/v1/responses"
+   ],
+   "model_page": "https://argolink.io/en/models/gpt-5.4",
+   "context_tokens": 1050000,
+   "max_input_tokens": null,
+   "max_output_tokens": 128000,
+   "reads_images": true,
+   "reasoning_efforts": [
+    "low",
+    "medium",
+    "high",
+    "xhigh"
+   ],
+   "default_effort": "none",
+   "image": null,
+   "video": null,
+   "price": {
+    "currency": "USD",
+    "unit": "per_1m_tokens",
+    "input": 0.75,
+    "output": 4.5,
+    "cached_input": 0.075
+   },
+   "list_price": {
+    "currency": "USD",
+    "unit": "per_1m_tokens",
+    "input": 2.5,
+    "output": 15,
+    "cached_input": 0.25
+   },
+   "discount_vs_list": 0.7,
+   "billing_rules": [
+    {
+     "rule": "reasoning_tokens_billed_as_output"
+    },
+    {
+     "rule": "long_context",
+     "prompt_tokens_over": 272000,
+     "input_multiplier": 2,
+     "output_multiplier": 1.5
+    },
+    {
+     "rule": "fast_mode",
+     "request_field": "service_tier: priority",
+     "multiplier": 2
+    }
+   ]
+  },
+  {
+   "id": "gpt-5.4-mini",
+   "name": "GPT-5.4 mini",
+   "provider": "openai",
+   "category": "chat",
+   "recommended_endpoint": "/v1/responses",
+   "endpoints": [
+    "/v1/chat/completions",
+    "/v1/responses"
+   ],
+   "model_page": "https://argolink.io/en/models/gpt-5.4-mini",
+   "context_tokens": 400000,
+   "max_input_tokens": 272000,
+   "max_output_tokens": 128000,
+   "reads_images": true,
+   "reasoning_efforts": [
+    "low",
+    "medium",
+    "high",
+    "xhigh"
+   ],
+   "default_effort": "none",
+   "image": null,
+   "video": null,
+   "price": {
+    "currency": "USD",
+    "unit": "per_1m_tokens",
+    "input": 0.225,
+    "output": 1.35,
+    "cached_input": 0.0225
+   },
+   "list_price": {
+    "currency": "USD",
+    "unit": "per_1m_tokens",
+    "input": 0.75,
+    "output": 4.5,
+    "cached_input": 0.075
+   },
+   "discount_vs_list": 0.7,
+   "billing_rules": [
+    {
+     "rule": "reasoning_tokens_billed_as_output"
+    },
+    {
+     "rule": "fast_mode",
+     "request_field": "service_tier: priority",
+     "multiplier": 2
+    }
+   ]
+  },
+  {
+   "id": "gpt-5.5",
+   "name": "GPT-5.5",
+   "provider": "openai",
+   "category": "chat",
+   "recommended_endpoint": "/v1/responses",
+   "endpoints": [
+    "/v1/chat/completions",
+    "/v1/responses"
+   ],
+   "model_page": "https://argolink.io/en/models/gpt-5.5",
+   "context_tokens": 1050000,
+   "max_input_tokens": null,
+   "max_output_tokens": 128000,
+   "reads_images": true,
+   "reasoning_efforts": [
+    "low",
+    "medium",
+    "high",
+    "xhigh"
+   ],
+   "default_effort": "medium",
+   "image": null,
+   "video": null,
+   "price": {
+    "currency": "USD",
+    "unit": "per_1m_tokens",
+    "input": 1.5,
+    "output": 9,
+    "cached_input": 0.15
+   },
+   "list_price": {
+    "currency": "USD",
+    "unit": "per_1m_tokens",
+    "input": 5,
+    "output": 30,
+    "cached_input": 0.5
+   },
+   "discount_vs_list": 0.7,
+   "billing_rules": [
+    {
+     "rule": "reasoning_tokens_billed_as_output"
+    },
+    {
+     "rule": "long_context",
+     "prompt_tokens_over": 272000,
+     "input_multiplier": 2,
+     "output_multiplier": 1.5
+    },
+    {
+     "rule": "fast_mode",
+     "request_field": "service_tier: priority",
+     "multiplier": 2.5
+    }
+   ]
+  },
+  {
+   "id": "gpt-5.6-luna",
+   "name": "GPT-5.6 Luna",
+   "provider": "openai",
+   "category": "chat",
+   "recommended_endpoint": "/v1/responses",
+   "endpoints": [
+    "/v1/chat/completions",
+    "/v1/responses"
+   ],
+   "model_page": "https://argolink.io/en/models/gpt-5.6-luna",
+   "context_tokens": 1050000,
+   "max_input_tokens": 922000,
+   "max_output_tokens": 128000,
+   "reads_images": true,
+   "reasoning_efforts": [
+    "low",
+    "medium",
+    "high",
+    "xhigh",
+    "max"
+   ],
+   "default_effort": "medium",
+   "image": null,
+   "video": null,
+   "price": {
+    "currency": "USD",
+    "unit": "per_1m_tokens",
+    "input": 0.06,
+    "output": 0.36,
+    "cached_input": 0.006,
+    "cache_write": 0.075
+   },
+   "list_price": {
+    "currency": "USD",
+    "unit": "per_1m_tokens",
+    "input": 0.2,
+    "output": 1.2,
+    "cached_input": 0.02,
+    "cache_write": 0.25
+   },
+   "discount_vs_list": 0.7,
+   "billing_rules": [
+    {
+     "rule": "reasoning_tokens_billed_as_output"
+    },
+    {
+     "rule": "long_context",
+     "prompt_tokens_over": 272000,
+     "input_multiplier": 2,
+     "output_multiplier": 1.5
+    },
+    {
+     "rule": "fast_mode",
+     "request_field": "service_tier: priority",
+     "multiplier": 2
+    }
+   ]
+  },
+  {
+   "id": "gpt-5.6-sol",
+   "name": "GPT-5.6 Sol",
+   "provider": "openai",
+   "category": "chat",
+   "recommended_endpoint": "/v1/responses",
+   "endpoints": [
+    "/v1/chat/completions",
+    "/v1/responses"
+   ],
+   "model_page": "https://argolink.io/en/models/gpt-5.6-sol",
+   "context_tokens": 1050000,
+   "max_input_tokens": 922000,
+   "max_output_tokens": 128000,
+   "reads_images": true,
+   "reasoning_efforts": [
+    "low",
+    "medium",
+    "high",
+    "xhigh",
+    "max"
+   ],
+   "default_effort": "medium",
+   "image": null,
+   "video": null,
+   "price": {
+    "currency": "USD",
+    "unit": "per_1m_tokens",
+    "input": 1.5,
+    "output": 9,
+    "cached_input": 0.15,
+    "cache_write": 1.875
+   },
+   "list_price": {
+    "currency": "USD",
+    "unit": "per_1m_tokens",
+    "input": 5,
+    "output": 30,
+    "cached_input": 0.5,
+    "cache_write": 6.25
+   },
+   "discount_vs_list": 0.7,
+   "billing_rules": [
+    {
+     "rule": "reasoning_tokens_billed_as_output"
+    },
+    {
+     "rule": "long_context",
+     "prompt_tokens_over": 272000,
+     "input_multiplier": 2,
+     "output_multiplier": 1.5
+    },
+    {
+     "rule": "fast_mode",
+     "request_field": "service_tier: priority",
+     "multiplier": 2
+    }
+   ]
+  },
+  {
+   "id": "gpt-5.6-terra",
+   "name": "GPT-5.6 Terra",
+   "provider": "openai",
+   "category": "chat",
+   "recommended_endpoint": "/v1/responses",
+   "endpoints": [
+    "/v1/chat/completions",
+    "/v1/responses"
+   ],
+   "model_page": "https://argolink.io/en/models/gpt-5.6-terra",
+   "context_tokens": 1050000,
+   "max_input_tokens": 922000,
+   "max_output_tokens": 128000,
+   "reads_images": true,
+   "reasoning_efforts": [
+    "low",
+    "medium",
+    "high",
+    "xhigh",
+    "max"
+   ],
+   "default_effort": "medium",
+   "image": null,
+   "video": null,
+   "price": {
+    "currency": "USD",
+    "unit": "per_1m_tokens",
+    "input": 0.6,
+    "output": 3.6,
+    "cached_input": 0.06,
+    "cache_write": 0.75
+   },
+   "list_price": {
+    "currency": "USD",
+    "unit": "per_1m_tokens",
+    "input": 2,
+    "output": 12,
+    "cached_input": 0.2,
+    "cache_write": 2.5
+   },
+   "discount_vs_list": 0.7,
+   "billing_rules": [
+    {
+     "rule": "reasoning_tokens_billed_as_output"
+    },
+    {
+     "rule": "long_context",
+     "prompt_tokens_over": 272000,
+     "input_multiplier": 2,
+     "output_multiplier": 1.5
+    },
+    {
+     "rule": "fast_mode",
+     "request_field": "service_tier: priority",
+     "multiplier": 2
+    }
+   ]
+  },
+  {
+   "id": "gpt-6-astra",
+   "name": "GPT-6 Astra",
+   "provider": "openai",
+   "category": "chat",
+   "recommended_endpoint": "/v1/responses",
+   "endpoints": [
+    "/v1/chat/completions",
+    "/v1/responses"
+   ],
+   "model_page": "https://argolink.io/en/models/gpt-6-astra",
+   "context_tokens": 1050000,
+   "max_input_tokens": 922000,
+   "max_output_tokens": 128000,
+   "reads_images": true,
+   "reasoning_efforts": [
+    "low",
+    "medium",
+    "high",
+    "xhigh",
+    "max"
+   ],
+   "default_effort": null,
+   "image": null,
+   "video": null,
+   "price": {
+    "currency": "USD",
+    "unit": "per_1m_tokens",
+    "input": 3,
+    "output": 15,
+    "cached_input": 0.3,
+    "cache_write": 3.75
+   },
+   "list_price": {
+    "currency": "USD",
+    "unit": "per_1m_tokens",
+    "input": 10,
+    "output": 50,
+    "cached_input": 1,
+    "cache_write": 12.5
+   },
+   "discount_vs_list": 0.7,
+   "billing_rules": [
+    {
+     "rule": "reasoning_tokens_billed_as_output"
+    },
+    {
+     "rule": "long_context",
+     "prompt_tokens_over": 272000,
+     "input_multiplier": 2,
+     "output_multiplier": 1.5
+    },
+    {
+     "rule": "fast_mode",
+     "request_field": "service_tier: priority",
+     "multiplier": 2
+    }
+   ]
+  },
+  {
+   "id": "gpt-6-sol",
+   "name": "GPT-6 Sol",
+   "provider": "openai",
+   "category": "chat",
+   "recommended_endpoint": "/v1/responses",
+   "endpoints": [
+    "/v1/chat/completions",
+    "/v1/responses"
+   ],
+   "model_page": "https://argolink.io/en/models/gpt-6-sol",
+   "context_tokens": 1050000,
+   "max_input_tokens": 922000,
+   "max_output_tokens": 128000,
+   "reads_images": true,
+   "reasoning_efforts": [
+    "low",
+    "medium",
+    "high",
+    "xhigh",
+    "max"
+   ],
+   "default_effort": "medium",
+   "image": null,
+   "video": null,
+   "price": {
+    "currency": "USD",
+    "unit": "per_1m_tokens",
+    "input": 0.6,
+    "output": 3,
+    "cached_input": 0.06,
+    "cache_write": 0.75
+   },
+   "list_price": {
+    "currency": "USD",
+    "unit": "per_1m_tokens",
+    "input": 2,
+    "output": 10,
+    "cached_input": 0.2,
+    "cache_write": 2.5
+   },
+   "discount_vs_list": 0.7,
+   "billing_rules": [
+    {
+     "rule": "reasoning_tokens_billed_as_output"
+    },
+    {
+     "rule": "long_context",
+     "prompt_tokens_over": 272000,
+     "input_multiplier": 2,
+     "output_multiplier": 1.5
+    },
+    {
+     "rule": "fast_mode",
+     "request_field": "service_tier: priority",
+     "multiplier": 2
+    }
+   ]
+  },
+  {
+   "id": "gpt-6.1-sol",
+   "name": "GPT-6.1 Sol",
+   "provider": "openai",
+   "category": "chat",
+   "recommended_endpoint": "/v1/responses",
+   "endpoints": [
+    "/v1/chat/completions",
+    "/v1/responses"
+   ],
+   "model_page": "https://argolink.io/en/models/gpt-6.1-sol",
+   "context_tokens": 1050000,
+   "max_input_tokens": null,
+   "max_output_tokens": 128000,
+   "reads_images": true,
+   "reasoning_efforts": [
+    "low",
+    "medium",
+    "high",
+    "xhigh",
+    "max"
+   ],
+   "default_effort": "medium",
+   "image": null,
+   "video": null,
+   "price": {
+    "currency": "USD",
+    "unit": "per_1m_tokens",
+    "input": 0.6,
+    "output": 3,
+    "cached_input": 0.03,
+    "cache_write": 0.75
+   },
+   "list_price": {
+    "currency": "USD",
+    "unit": "per_1m_tokens",
+    "input": 2,
+    "output": 10,
+    "cached_input": 0.1,
+    "cache_write": 2.5
+   },
+   "discount_vs_list": 0.7,
+   "billing_rules": [
+    {
+     "rule": "reasoning_tokens_billed_as_output"
+    },
+    {
+     "rule": "long_context",
+     "prompt_tokens_over": 272000,
+     "input_multiplier": 2,
+     "output_multiplier": 1.5
+    },
+    {
+     "rule": "fast_mode",
+     "request_field": "service_tier: priority",
+     "multiplier": 2
+    }
+   ]
+  },
+  {
+   "id": "claude-fable-5",
+   "name": "Claude Fable 5",
+   "provider": "anthropic",
+   "category": "chat",
+   "recommended_endpoint": "/v1/messages",
+   "endpoints": [
+    "/v1/chat/completions",
+    "/v1/messages",
+    "/v1/responses"
+   ],
+   "model_page": "https://argolink.io/en/models/claude-fable-5",
+   "context_tokens": 1000000,
+   "max_input_tokens": null,
+   "max_output_tokens": 128000,
+   "reads_images": true,
+   "reasoning_efforts": [
+    "low",
+    "medium",
+    "high",
+    "xhigh",
+    "max"
+   ],
+   "default_effort": "high",
+   "image": null,
+   "video": null,
+   "price": {
+    "currency": "USD",
+    "unit": "per_1m_tokens",
+    "input": 4,
+    "output": 20,
+    "cached_input": 0.4,
+    "cache_write": 5
+   },
+   "list_price": {
+    "currency": "USD",
+    "unit": "per_1m_tokens",
+    "input": 10,
+    "output": 50,
+    "cached_input": 1,
+    "cache_write": 12.5
+   },
+   "discount_vs_list": 0.6,
+   "billing_rules": [
+    {
+     "rule": "reasoning_tokens_billed_as_output"
+    },
+    {
+     "rule": "cache_write_1h",
+     "multiplier_of_input": 2
+    }
+   ]
+  },
+  {
+   "id": "claude-fable-5-1",
+   "name": "Claude Fable 5.1",
+   "provider": "anthropic",
+   "category": "chat",
+   "recommended_endpoint": "/v1/messages",
+   "endpoints": [
+    "/v1/chat/completions",
+    "/v1/messages",
+    "/v1/responses"
+   ],
+   "model_page": "https://argolink.io/en/models/claude-fable-5-1",
+   "context_tokens": 1000000,
+   "max_input_tokens": null,
+   "max_output_tokens": 128000,
+   "reads_images": true,
+   "reasoning_efforts": [
+    "low",
+    "medium",
+    "high",
+    "xhigh",
+    "max"
+   ],
+   "default_effort": "high",
+   "image": null,
+   "video": null,
+   "price": {
+    "currency": "USD",
+    "unit": "per_1m_tokens",
+    "input": 4,
+    "output": 20,
+    "cached_input": 0.1,
+    "cache_write": 5
+   },
+   "list_price": {
+    "currency": "USD",
+    "unit": "per_1m_tokens",
+    "input": 10,
+    "output": 50,
+    "cached_input": 0.25,
+    "cache_write": 12.5
+   },
+   "discount_vs_list": 0.6,
+   "billing_rules": [
+    {
+     "rule": "reasoning_tokens_billed_as_output"
+    },
+    {
+     "rule": "max_effort",
+     "multiplier": 3
+    },
+    {
+     "rule": "cache_write_1h",
+     "multiplier_of_input": 2
+    }
+   ]
+  },
+  {
+   "id": "claude-opus-4-8",
+   "name": "Claude Opus 4.8",
+   "provider": "anthropic",
+   "category": "chat",
+   "recommended_endpoint": "/v1/messages",
+   "endpoints": [
+    "/v1/chat/completions",
+    "/v1/messages",
+    "/v1/responses"
+   ],
+   "model_page": "https://argolink.io/en/models/claude-opus-4-8",
+   "context_tokens": 1000000,
+   "max_input_tokens": null,
+   "max_output_tokens": 128000,
+   "reads_images": true,
+   "reasoning_efforts": [
+    "low",
+    "medium",
+    "high",
+    "xhigh",
+    "max"
+   ],
+   "default_effort": "high",
+   "image": null,
+   "video": null,
+   "price": {
+    "currency": "USD",
+    "unit": "per_1m_tokens",
+    "input": 2,
+    "output": 10,
+    "cached_input": 0.2,
+    "cache_write": 2.5
+   },
+   "list_price": {
+    "currency": "USD",
+    "unit": "per_1m_tokens",
+    "input": 5,
+    "output": 25,
+    "cached_input": 0.5,
+    "cache_write": 6.25
+   },
+   "discount_vs_list": 0.6,
+   "billing_rules": [
+    {
+     "rule": "reasoning_tokens_billed_as_output"
+    },
+    {
+     "rule": "cache_write_1h",
+     "multiplier_of_input": 2
+    }
+   ]
+  },
+  {
+   "id": "claude-opus-5",
+   "name": "Claude Opus 5",
+   "provider": "anthropic",
+   "category": "chat",
+   "recommended_endpoint": "/v1/messages",
+   "endpoints": [
+    "/v1/chat/completions",
+    "/v1/messages",
+    "/v1/responses"
+   ],
+   "model_page": "https://argolink.io/en/models/claude-opus-5",
+   "context_tokens": 1000000,
+   "max_input_tokens": null,
+   "max_output_tokens": 128000,
+   "reads_images": true,
+   "reasoning_efforts": [
+    "low",
+    "medium",
+    "high",
+    "xhigh",
+    "max"
+   ],
+   "default_effort": "high",
+   "image": null,
+   "video": null,
+   "price": {
+    "currency": "USD",
+    "unit": "per_1m_tokens",
+    "input": 2,
+    "output": 10,
+    "cached_input": 0.2,
+    "cache_write": 2.5
+   },
+   "list_price": {
+    "currency": "USD",
+    "unit": "per_1m_tokens",
+    "input": 5,
+    "output": 25,
+    "cached_input": 0.5,
+    "cache_write": 6.25
+   },
+   "discount_vs_list": 0.6,
+   "billing_rules": [
+    {
+     "rule": "reasoning_tokens_billed_as_output"
+    },
+    {
+     "rule": "cache_write_1h",
+     "multiplier_of_input": 2
+    }
+   ]
+  },
+  {
+   "id": "claude-opus-5-5",
+   "name": "Claude Opus 5.5",
+   "provider": "anthropic",
+   "category": "chat",
+   "recommended_endpoint": "/v1/messages",
+   "endpoints": [
+    "/v1/chat/completions",
+    "/v1/messages",
+    "/v1/responses"
+   ],
+   "model_page": "https://argolink.io/en/models/claude-opus-5-5",
+   "context_tokens": 1000000,
+   "max_input_tokens": null,
+   "max_output_tokens": 128000,
+   "reads_images": true,
+   "reasoning_efforts": [
+    "low",
+    "medium",
+    "high",
+    "xhigh",
+    "max"
+   ],
+   "default_effort": "medium",
+   "image": null,
+   "video": null,
+   "price": {
+    "currency": "USD",
+    "unit": "per_1m_tokens",
+    "input": 1.6,
+    "output": 8,
+    "cached_input": 0.08,
+    "cache_write": 2
+   },
+   "list_price": {
+    "currency": "USD",
+    "unit": "per_1m_tokens",
+    "input": 4,
+    "output": 20,
+    "cached_input": 0.2,
+    "cache_write": 5
+   },
+   "discount_vs_list": 0.6,
+   "billing_rules": [
+    {
+     "rule": "reasoning_tokens_billed_as_output"
+    },
+    {
+     "rule": "cache_write_1h",
+     "multiplier_of_input": 2
+    }
+   ]
+  },
+  {
+   "id": "claude-sonnet-5",
+   "name": "Claude Sonnet 5",
+   "provider": "anthropic",
+   "category": "chat",
+   "recommended_endpoint": "/v1/messages",
+   "endpoints": [
+    "/v1/chat/completions",
+    "/v1/messages",
+    "/v1/responses"
+   ],
+   "model_page": "https://argolink.io/en/models/claude-sonnet-5",
+   "context_tokens": 1000000,
+   "max_input_tokens": null,
+   "max_output_tokens": 128000,
+   "reads_images": true,
+   "reasoning_efforts": [
+    "low",
+    "medium",
+    "high",
+    "xhigh",
+    "max"
+   ],
+   "default_effort": "high",
+   "image": null,
+   "video": null,
+   "price": {
+    "currency": "USD",
+    "unit": "per_1m_tokens",
+    "input": 0.8,
+    "output": 4,
+    "cached_input": 0.08,
+    "cache_write": 1
+   },
+   "list_price": {
+    "currency": "USD",
+    "unit": "per_1m_tokens",
+    "input": 2,
+    "output": 10,
+    "cached_input": 0.2,
+    "cache_write": 2.5
+   },
+   "discount_vs_list": 0.6,
+   "billing_rules": [
+    {
+     "rule": "reasoning_tokens_billed_as_output"
+    },
+    {
+     "rule": "cache_write_1h",
+     "multiplier_of_input": 2
+    }
+   ]
+  },
+  {
+   "id": "grok-4.5",
+   "name": "Grok 4.5",
+   "provider": "xai",
+   "category": "chat",
+   "recommended_endpoint": "/v1/responses",
+   "endpoints": [
+    "/v1/chat/completions",
+    "/v1/messages",
+    "/v1/responses"
+   ],
+   "model_page": "https://argolink.io/en/models/grok-4.5",
+   "context_tokens": 500000,
+   "max_input_tokens": null,
+   "max_output_tokens": null,
+   "reads_images": true,
+   "reasoning_efforts": [
+    "low",
+    "medium",
+    "high"
+   ],
+   "default_effort": "high",
+   "image": null,
+   "video": null,
+   "price": {
+    "currency": "USD",
+    "unit": "per_1m_tokens",
+    "input": 0.6,
+    "output": 1.8,
+    "cached_input": 0.09
+   },
+   "list_price": {
+    "currency": "USD",
+    "unit": "per_1m_tokens",
+    "input": 2,
+    "output": 6,
+    "cached_input": 0.3
+   },
+   "discount_vs_list": 0.7,
+   "billing_rules": [
+    {
+     "rule": "reasoning_tokens_billed_as_output"
+    }
+   ]
+  },
+  {
+   "id": "grok-4.6",
+   "name": "Grok 4.6",
+   "provider": "xai",
+   "category": "chat",
+   "recommended_endpoint": "/v1/responses",
+   "endpoints": [
+    "/v1/chat/completions",
+    "/v1/messages",
+    "/v1/responses"
+   ],
+   "model_page": "https://argolink.io/en/models/grok-4.6",
+   "context_tokens": 500000,
+   "max_input_tokens": null,
+   "max_output_tokens": null,
+   "reads_images": true,
+   "reasoning_efforts": [
+    "low",
+    "medium",
+    "high",
+    "xhigh"
+   ],
+   "default_effort": "high",
+   "image": null,
+   "video": null,
+   "price": {
+    "currency": "USD",
+    "unit": "per_1m_tokens",
+    "input": 0.6,
+    "output": 1.8,
+    "cached_input": 0.15
+   },
+   "list_price": {
+    "currency": "USD",
+    "unit": "per_1m_tokens",
+    "input": 2,
+    "output": 6,
+    "cached_input": 0.5
+   },
+   "discount_vs_list": 0.7,
+   "billing_rules": [
+    {
+     "rule": "reasoning_tokens_billed_as_output"
+    }
+   ]
+  },
+  {
+   "id": "grok-4.7",
+   "name": "Grok 4.7",
+   "provider": "xai",
+   "category": "chat",
+   "recommended_endpoint": "/v1/responses",
+   "endpoints": [
+    "/v1/chat/completions",
+    "/v1/messages",
+    "/v1/responses"
+   ],
+   "model_page": "https://argolink.io/en/models/grok-4.7",
+   "context_tokens": 500000,
+   "max_input_tokens": null,
+   "max_output_tokens": null,
+   "reads_images": true,
+   "reasoning_efforts": [
+    "low",
+    "medium",
+    "high",
+    "xhigh"
+   ],
+   "default_effort": "high",
+   "image": null,
+   "video": null,
+   "price": {
+    "currency": "USD",
+    "unit": "per_1m_tokens",
+    "input": 0.6,
+    "output": 1.8,
+    "cached_input": 0.15
+   },
+   "list_price": {
+    "currency": "USD",
+    "unit": "per_1m_tokens",
+    "input": 2,
+    "output": 6,
+    "cached_input": 0.5
+   },
+   "discount_vs_list": 0.7,
+   "billing_rules": [
+    {
+     "rule": "reasoning_tokens_billed_as_output"
+    }
+   ]
+  },
+  {
+   "id": "deepseek-v4-pro",
+   "name": "DeepSeek V4 Pro",
+   "provider": "deepseek",
+   "category": "chat",
+   "recommended_endpoint": "/v1/chat/completions",
+   "endpoints": [
+    "/v1/chat/completions",
+    "/v1/messages",
+    "/v1/responses"
+   ],
+   "model_page": "https://argolink.io/en/models/deepseek-v4-pro",
+   "context_tokens": 1048576,
+   "max_input_tokens": null,
+   "max_output_tokens": 393216,
+   "reads_images": null,
+   "reasoning_efforts": [
+    "low",
+    "high",
+    "max"
+   ],
+   "default_effort": "high",
+   "image": null,
+   "video": null,
+   "price": {
+    "currency": "USD",
+    "unit": "per_1m_tokens",
+    "input": 0.528,
+    "output": 1.584,
+    "cached_input": 0.0176
+   },
+   "list_price": {
+    "currency": "USD",
+    "unit": "per_1m_tokens",
+    "input": 0.66,
+    "output": 1.98,
+    "cached_input": 0.022
+   },
+   "discount_vs_list": 0.2,
+   "billing_rules": [
+    {
+     "rule": "reasoning_tokens_billed_as_output"
+    },
+    {
+     "rule": "peak_hours",
+     "window": "Mon-Fri 09:00-12:00 and 14:00-18:00 Asia/Shanghai",
+     "multiplier": 2
+    }
+   ]
+  },
+  {
+   "id": "deepseek-v4.1-flash",
+   "name": "DeepSeek V4.1 Flash",
+   "provider": "deepseek",
+   "category": "chat",
+   "recommended_endpoint": "/v1/chat/completions",
+   "endpoints": [
+    "/v1/chat/completions",
+    "/v1/messages",
+    "/v1/responses"
+   ],
+   "model_page": "https://argolink.io/en/models/deepseek-v4.1-flash",
+   "context_tokens": 1048576,
+   "max_input_tokens": null,
+   "max_output_tokens": 393216,
+   "reads_images": true,
+   "reasoning_efforts": [
+    "low",
+    "high",
+    "max"
+   ],
+   "default_effort": "high",
+   "image": null,
+   "video": null,
+   "price": {
+    "currency": "USD",
+    "unit": "per_1m_tokens",
+    "input": 0.12,
+    "output": 0.48,
+    "cached_input": 0.0024
+   },
+   "list_price": {
+    "currency": "USD",
+    "unit": "per_1m_tokens",
+    "input": 0.15,
+    "output": 0.6,
+    "cached_input": 0.003
+   },
+   "discount_vs_list": 0.2,
+   "billing_rules": [
+    {
+     "rule": "reasoning_tokens_billed_as_output"
+    },
+    {
+     "rule": "peak_hours",
+     "window": "Mon-Fri 09:00-12:00 and 14:00-18:00 Asia/Shanghai",
+     "multiplier": 2
+    }
+   ]
+  },
+  {
+   "id": "glm-5.1",
+   "name": "GLM-5.1",
+   "provider": "zhipu",
+   "category": "chat",
+   "recommended_endpoint": "/v1/chat/completions",
+   "endpoints": [
+    "/v1/chat/completions",
+    "/v1/messages",
+    "/v1/responses"
+   ],
+   "model_page": "https://argolink.io/en/models/glm-5.1",
+   "context_tokens": 200000,
+   "max_input_tokens": null,
+   "max_output_tokens": 128000,
+   "reads_images": null,
+   "reasoning_efforts": null,
+   "default_effort": null,
+   "image": null,
+   "video": null,
+   "price": {
+    "currency": "USD",
+    "unit": "per_1m_tokens",
+    "input": 1.12,
+    "output": 3.52,
+    "cached_input": 0.208
+   },
+   "list_price": {
+    "currency": "USD",
+    "unit": "per_1m_tokens",
+    "input": 1.4,
+    "output": 4.4,
+    "cached_input": 0.26
+   },
+   "discount_vs_list": 0.2,
+   "billing_rules": [
+    {
+     "rule": "reasoning_tokens_billed_as_output"
+    }
+   ]
+  },
+  {
+   "id": "glm-5.2",
+   "name": "GLM-5.2",
+   "provider": "zhipu",
+   "category": "chat",
+   "recommended_endpoint": "/v1/chat/completions",
+   "endpoints": [
+    "/v1/chat/completions",
+    "/v1/messages",
+    "/v1/responses"
+   ],
+   "model_page": "https://argolink.io/en/models/glm-5.2",
+   "context_tokens": 1000000,
+   "max_input_tokens": null,
+   "max_output_tokens": 128000,
+   "reads_images": null,
+   "reasoning_efforts": [
+    "high",
+    "max"
+   ],
+   "default_effort": "max",
+   "image": null,
+   "video": null,
+   "price": {
+    "currency": "USD",
+    "unit": "per_1m_tokens",
+    "input": 1.12,
+    "output": 3.52,
+    "cached_input": 0.208
+   },
+   "list_price": {
+    "currency": "USD",
+    "unit": "per_1m_tokens",
+    "input": 1.4,
+    "output": 4.4,
+    "cached_input": 0.26
+   },
+   "discount_vs_list": 0.2,
+   "billing_rules": [
+    {
+     "rule": "reasoning_tokens_billed_as_output"
+    }
+   ]
+  },
+  {
+   "id": "glm-5.3",
+   "name": "GLM-5.3",
+   "provider": "zhipu",
+   "category": "chat",
+   "recommended_endpoint": "/v1/chat/completions",
+   "endpoints": [
+    "/v1/chat/completions",
+    "/v1/messages",
+    "/v1/responses"
+   ],
+   "model_page": "https://argolink.io/en/models/glm-5.3",
+   "context_tokens": 1000000,
+   "max_input_tokens": null,
+   "max_output_tokens": 128000,
+   "reads_images": null,
+   "reasoning_efforts": [
+    "low",
+    "high",
+    "max"
+   ],
+   "default_effort": "max",
+   "image": null,
+   "video": null,
+   "price": {
+    "currency": "USD",
+    "unit": "per_1m_tokens",
+    "input": 1.12,
+    "output": 3.52,
+    "cached_input": 0.208
+   },
+   "list_price": {
+    "currency": "USD",
+    "unit": "per_1m_tokens",
+    "input": 1.4,
+    "output": 4.4,
+    "cached_input": 0.26
+   },
+   "discount_vs_list": 0.2,
+   "billing_rules": [
+    {
+     "rule": "reasoning_tokens_billed_as_output"
+    }
+   ]
+  },
+  {
+   "id": "glm-5.3-flash",
+   "name": "GLM-5.3 Flash",
+   "provider": "zhipu",
+   "category": "chat",
+   "recommended_endpoint": "/v1/chat/completions",
+   "endpoints": [
+    "/v1/chat/completions",
+    "/v1/messages",
+    "/v1/responses"
+   ],
+   "model_page": "https://argolink.io/en/models/glm-5.3-flash",
+   "context_tokens": 1000000,
+   "max_input_tokens": null,
+   "max_output_tokens": 128000,
+   "reads_images": true,
+   "reasoning_efforts": [
+    "high",
+    "max"
+   ],
+   "default_effort": "max",
+   "image": null,
+   "video": null,
+   "price": {
+    "currency": "USD",
+    "unit": "per_1m_tokens",
+    "input": 0.12,
+    "output": 0.4,
+    "cached_input": 0.024
+   },
+   "list_price": {
+    "currency": "USD",
+    "unit": "per_1m_tokens",
+    "input": 0.15,
+    "output": 0.5,
+    "cached_input": 0.03
+   },
+   "discount_vs_list": 0.2,
+   "billing_rules": [
+    {
+     "rule": "reasoning_tokens_billed_as_output"
+    }
+   ]
+  },
+  {
+   "id": "glm-5.3-flashx",
+   "name": "GLM-5.3 FlashX",
+   "provider": "zhipu",
+   "category": "chat",
+   "recommended_endpoint": "/v1/chat/completions",
+   "endpoints": [
+    "/v1/chat/completions",
+    "/v1/messages",
+    "/v1/responses"
+   ],
+   "model_page": "https://argolink.io/en/models/glm-5.3-flashx",
+   "context_tokens": 1000000,
+   "max_input_tokens": null,
+   "max_output_tokens": 128000,
+   "reads_images": true,
+   "reasoning_efforts": [
+    "high",
+    "max"
+   ],
+   "default_effort": "max",
+   "image": null,
+   "video": null,
+   "price": {
+    "currency": "USD",
+    "unit": "per_1m_tokens",
+    "input": 0.296,
+    "output": 1,
+    "cached_input": 0.06
+   },
+   "list_price": {
+    "currency": "USD",
+    "unit": "per_1m_tokens",
+    "input": 0.37,
+    "output": 1.25,
+    "cached_input": 0.075
+   },
+   "discount_vs_list": 0.2,
+   "billing_rules": [
+    {
+     "rule": "reasoning_tokens_billed_as_output"
+    }
+   ]
+  },
+  {
+   "id": "kimi-k2.6",
+   "name": "Kimi K2.6",
+   "provider": "kimi",
+   "category": "chat",
+   "recommended_endpoint": "/v1/chat/completions",
+   "endpoints": [
+    "/v1/chat/completions",
+    "/v1/messages",
+    "/v1/responses"
+   ],
+   "model_page": "https://argolink.io/en/models/kimi-k2.6",
+   "context_tokens": 262144,
+   "max_input_tokens": null,
+   "max_output_tokens": null,
+   "reads_images": null,
+   "reasoning_efforts": null,
+   "default_effort": null,
+   "image": null,
+   "video": null,
+   "price": {
+    "currency": "USD",
+    "unit": "per_1m_tokens",
+    "input": 0.76,
+    "output": 3.2,
+    "cached_input": 0.128
+   },
+   "list_price": {
+    "currency": "USD",
+    "unit": "per_1m_tokens",
+    "input": 0.95,
+    "output": 4,
+    "cached_input": 0.16
+   },
+   "discount_vs_list": 0.2,
+   "billing_rules": [
+    {
+     "rule": "reasoning_tokens_billed_as_output"
+    }
+   ]
+  },
+  {
+   "id": "kimi-k2.7-code",
+   "name": "Kimi K2.7 Code",
+   "provider": "kimi",
+   "category": "chat",
+   "recommended_endpoint": "/v1/chat/completions",
+   "endpoints": [
+    "/v1/chat/completions",
+    "/v1/messages",
+    "/v1/responses"
+   ],
+   "model_page": "https://argolink.io/en/models/kimi-k2.7-code",
+   "context_tokens": 262144,
+   "max_input_tokens": null,
+   "max_output_tokens": null,
+   "reads_images": null,
+   "reasoning_efforts": null,
+   "default_effort": null,
+   "image": null,
+   "video": null,
+   "price": {
+    "currency": "USD",
+    "unit": "per_1m_tokens",
+    "input": 0.76,
+    "output": 3.2,
+    "cached_input": 0.152
+   },
+   "list_price": {
+    "currency": "USD",
+    "unit": "per_1m_tokens",
+    "input": 0.95,
+    "output": 4,
+    "cached_input": 0.19
+   },
+   "discount_vs_list": 0.2,
+   "billing_rules": [
+    {
+     "rule": "reasoning_tokens_billed_as_output"
+    }
+   ]
+  },
+  {
+   "id": "kimi-k3",
+   "name": "Kimi K3",
+   "provider": "kimi",
+   "category": "chat",
+   "recommended_endpoint": "/v1/chat/completions",
+   "endpoints": [
+    "/v1/chat/completions",
+    "/v1/messages",
+    "/v1/responses"
+   ],
+   "model_page": "https://argolink.io/en/models/kimi-k3",
+   "context_tokens": 1048576,
+   "max_input_tokens": null,
+   "max_output_tokens": 1048576,
+   "reads_images": true,
+   "reasoning_efforts": [
+    "low",
+    "high",
+    "max"
+   ],
+   "default_effort": "max",
+   "image": null,
+   "video": null,
+   "price": {
+    "currency": "USD",
+    "unit": "per_1m_tokens",
+    "input": 2.4,
+    "output": 12,
+    "cached_input": 0.24
+   },
+   "list_price": {
+    "currency": "USD",
+    "unit": "per_1m_tokens",
+    "input": 3,
+    "output": 15,
+    "cached_input": 0.3
+   },
+   "discount_vs_list": 0.2,
+   "billing_rules": [
+    {
+     "rule": "reasoning_tokens_billed_as_output"
+    }
+   ]
+  },
+  {
+   "id": "gpt-image-2",
+   "name": "GPT Image 2",
+   "provider": "openai",
+   "category": "image",
+   "recommended_endpoint": "/v1/images/generations",
+   "endpoints": [
+    "/v1/images/edits",
+    "/v1/images/generations"
+   ],
+   "model_page": "https://argolink.io/en/models/gpt-image-2",
+   "context_tokens": null,
+   "max_input_tokens": null,
+   "max_output_tokens": null,
+   "reads_images": null,
+   "reasoning_efforts": null,
+   "default_effort": null,
+   "image": {
+    "resolutions": [
+     "1k",
+     "2k",
+     "4k"
+    ],
+    "aspect_ratios": [
+     "1:1",
+     "3:4",
+     "4:3",
+     "2:3",
+     "3:2",
+     "9:16",
+     "16:9",
+     "21:9",
+     "5:2"
+    ],
+    "size_field": "size",
+    "max_outputs": 7,
+    "max_references": 16,
+    "response_formats": [
+     "url",
+     "b64_json"
+    ]
+   },
+   "video": null,
+   "price": {
+    "currency": "USD",
+    "unit": "per_image",
+    "tiers": [
+     {
+      "tier": "1K",
+      "usd": 0.015
+     },
+     {
+      "tier": "2K",
+      "usd": 0.015
+     },
+     {
+      "tier": "4K",
+      "usd": 0.02
+     }
+    ]
+   },
+   "list_price": null,
+   "discount_vs_list": null,
+   "billing_rules": [
+    {
+     "rule": "per_returned_image"
+    },
+    {
+     "rule": "tier_by_longest_edge",
+     "1K": "<=1024",
+     "2K": "1025-2048",
+     "4K": ">2048"
+    }
+   ]
+  },
+  {
+   "id": "gpt-image-2.5-flare",
+   "name": "GPT Image 2.5 Flare",
+   "provider": "openai",
+   "category": "image",
+   "recommended_endpoint": "/v1/images/generations",
+   "endpoints": [
+    "/v1/images/edits",
+    "/v1/images/generations"
+   ],
+   "model_page": "https://argolink.io/en/models/gpt-image-2.5-flare",
+   "context_tokens": null,
+   "max_input_tokens": null,
+   "max_output_tokens": null,
+   "reads_images": null,
+   "reasoning_efforts": null,
+   "default_effort": null,
+   "image": {
+    "resolutions": [
+     "1k",
+     "2k",
+     "4k"
+    ],
+    "aspect_ratios": [
+     "1:1",
+     "3:4",
+     "4:3",
+     "2:3",
+     "3:2",
+     "9:16",
+     "16:9",
+     "21:9",
+     "5:2"
+    ],
+    "size_field": "size",
+    "max_outputs": 7,
+    "max_references": 16,
+    "response_formats": [
+     "url",
+     "b64_json"
+    ]
+   },
+   "video": null,
+   "price": {
+    "currency": "USD",
+    "unit": "per_image",
+    "tiers": [
+     {
+      "tier": "1K",
+      "usd": 0.015
+     },
+     {
+      "tier": "2K",
+      "usd": 0.015
+     },
+     {
+      "tier": "4K",
+      "usd": 0.02
+     }
+    ]
+   },
+   "list_price": null,
+   "discount_vs_list": null,
+   "billing_rules": [
+    {
+     "rule": "per_returned_image"
+    },
+    {
+     "rule": "tier_by_longest_edge",
+     "1K": "<=1024",
+     "2K": "1025-2048",
+     "4K": ">2048"
+    }
+   ]
+  },
+  {
+   "id": "gpt-image-2.5-sunburst",
+   "name": "GPT Image 2.5 Sunburst",
+   "provider": "openai",
+   "category": "image",
+   "recommended_endpoint": "/v1/images/generations",
+   "endpoints": [
+    "/v1/images/edits",
+    "/v1/images/generations"
+   ],
+   "model_page": "https://argolink.io/en/models/gpt-image-2.5-sunburst",
+   "context_tokens": null,
+   "max_input_tokens": null,
+   "max_output_tokens": null,
+   "reads_images": null,
+   "reasoning_efforts": null,
+   "default_effort": null,
+   "image": {
+    "resolutions": [
+     "1k",
+     "2k",
+     "4k"
+    ],
+    "aspect_ratios": [
+     "1:1",
+     "3:4",
+     "4:3",
+     "2:3",
+     "3:2",
+     "9:16",
+     "16:9",
+     "21:9",
+     "5:2"
+    ],
+    "size_field": "size",
+    "max_outputs": 7,
+    "max_references": 16,
+    "response_formats": [
+     "url",
+     "b64_json"
+    ]
+   },
+   "video": null,
+   "price": {
+    "currency": "USD",
+    "unit": "per_image",
+    "tiers": [
+     {
+      "tier": "1K",
+      "usd": 0.015
+     },
+     {
+      "tier": "2K",
+      "usd": 0.015
+     },
+     {
+      "tier": "4K",
+      "usd": 0.02
+     }
+    ]
+   },
+   "list_price": null,
+   "discount_vs_list": null,
+   "billing_rules": [
+    {
+     "rule": "per_returned_image"
+    },
+    {
+     "rule": "tier_by_longest_edge",
+     "1K": "<=1024",
+     "2K": "1025-2048",
+     "4K": ">2048"
+    }
+   ]
+  },
+  {
+   "id": "grok-imagine-image",
+   "name": "Grok Imagine Image",
+   "provider": "xai",
+   "category": "image",
+   "recommended_endpoint": "/v1/images/generations",
+   "endpoints": [
+    "/v1/images/edits",
+    "/v1/images/generations"
+   ],
+   "model_page": "https://argolink.io/en/models/grok-imagine-image",
+   "context_tokens": null,
+   "max_input_tokens": null,
+   "max_output_tokens": null,
+   "reads_images": null,
+   "reasoning_efforts": null,
+   "default_effort": null,
+   "image": {
+    "resolutions": [
+     "1k",
+     "2k"
+    ],
+    "aspect_ratios": [
+     "1:1",
+     "16:9",
+     "9:16",
+     "4:3",
+     "3:4",
+     "3:2",
+     "2:3",
+     "2:1",
+     "1:2",
+     "19.5:9",
+     "9:19.5",
+     "20:9",
+     "9:20",
+     "21:9",
+     "5:2",
+     "auto"
+    ],
+    "size_field": "aspect_ratio + resolution",
+    "max_outputs": 10,
+    "max_references": 3,
+    "response_formats": [
+     "url",
+     "b64_json"
+    ]
+   },
+   "video": null,
+   "price": {
+    "currency": "USD",
+    "unit": "per_image",
+    "tiers": [
+     {
+      "tier": "1K",
+      "usd": 0.015
+     },
+     {
+      "tier": "2K",
+      "usd": 0.015
+     }
+    ]
+   },
+   "list_price": null,
+   "discount_vs_list": null,
+   "billing_rules": [
+    {
+     "rule": "per_returned_image"
+    }
+   ]
+  },
+  {
+   "id": "grok-imagine-image-2.0",
+   "name": "Grok Imagine Image 2.0",
+   "provider": "xai",
+   "category": "image",
+   "recommended_endpoint": "/v1/images/generations",
+   "endpoints": [
+    "/v1/images/edits",
+    "/v1/images/generations"
+   ],
+   "model_page": "https://argolink.io/en/models/grok-imagine-image-2.0",
+   "context_tokens": null,
+   "max_input_tokens": null,
+   "max_output_tokens": null,
+   "reads_images": null,
+   "reasoning_efforts": null,
+   "default_effort": null,
+   "image": {
+    "resolutions": [
+     "1k",
+     "1.5k",
+     "2k"
+    ],
+    "aspect_ratios": [
+     "1:1",
+     "16:9",
+     "9:16",
+     "4:3",
+     "3:4",
+     "3:2",
+     "2:3",
+     "2:1",
+     "1:2",
+     "19.5:9",
+     "9:19.5",
+     "20:9",
+     "9:20",
+     "21:9",
+     "5:2",
+     "auto"
+    ],
+    "size_field": "aspect_ratio + resolution",
+    "max_outputs": 10,
+    "max_references": 3,
+    "response_formats": [
+     "url",
+     "b64_json"
+    ]
+   },
+   "video": null,
+   "price": {
+    "currency": "USD",
+    "unit": "per_image",
+    "tiers": [
+     {
+      "tier": "1K",
+      "usd": 0.015
+     },
+     {
+      "tier": "2K",
+      "usd": 0.015
+     }
+    ]
+   },
+   "list_price": null,
+   "discount_vs_list": null,
+   "billing_rules": [
+    {
+     "rule": "per_returned_image"
+    }
+   ]
+  },
+  {
+   "id": "grok-imagine-image-quality",
+   "name": "Grok Imagine Image Quality",
+   "provider": "xai",
+   "category": "image",
+   "recommended_endpoint": "/v1/images/generations",
+   "endpoints": [
+    "/v1/images/edits",
+    "/v1/images/generations"
+   ],
+   "model_page": "https://argolink.io/en/models/grok-imagine-image-quality",
+   "context_tokens": null,
+   "max_input_tokens": null,
+   "max_output_tokens": null,
+   "reads_images": null,
+   "reasoning_efforts": null,
+   "default_effort": null,
+   "image": {
+    "resolutions": [
+     "1k",
+     "1.5k",
+     "2k"
+    ],
+    "aspect_ratios": [
+     "1:1",
+     "16:9",
+     "9:16",
+     "4:3",
+     "3:4",
+     "3:2",
+     "2:3",
+     "2:1",
+     "1:2",
+     "19.5:9",
+     "9:19.5",
+     "20:9",
+     "9:20",
+     "21:9",
+     "5:2",
+     "auto"
+    ],
+    "size_field": "aspect_ratio + resolution",
+    "max_outputs": 10,
+    "max_references": 3,
+    "response_formats": [
+     "url",
+     "b64_json"
+    ]
+   },
+   "video": null,
+   "price": {
+    "currency": "USD",
+    "unit": "per_image",
+    "tiers": [
+     {
+      "tier": "1K",
+      "usd": 0.015
+     },
+     {
+      "tier": "2K",
+      "usd": 0.015
+     }
+    ]
+   },
+   "list_price": null,
+   "discount_vs_list": null,
+   "billing_rules": [
+    {
+     "rule": "per_returned_image"
+    }
+   ]
+  },
+  {
+   "id": "nano-banana-2",
+   "name": "Nano Banana 2",
+   "provider": "google",
+   "category": "image",
+   "recommended_endpoint": "/v1/images/generations",
+   "endpoints": [
+    "/v1/images/edits",
+    "/v1/images/generations"
+   ],
+   "model_page": "https://argolink.io/en/models/nano-banana-2",
+   "context_tokens": null,
+   "max_input_tokens": null,
+   "max_output_tokens": null,
+   "reads_images": null,
+   "reasoning_efforts": null,
+   "default_effort": null,
+   "image": {
+    "resolutions": [
+     "1k",
+     "2k",
+     "4k"
+    ],
+    "aspect_ratios": [
+     "1:1",
+     "16:9",
+     "9:16",
+     "4:3",
+     "3:4",
+     "3:2",
+     "2:3",
+     "5:4",
+     "4:5",
+     "21:9",
+     "1:4",
+     "4:1",
+     "1:8",
+     "8:1"
+    ],
+    "size_field": "aspect_ratio + resolution",
+    "max_outputs": 4,
+    "max_references": 14,
+    "response_formats": [
+     "b64_json"
+    ]
+   },
+   "video": null,
+   "price": {
+    "currency": "USD",
+    "unit": "per_image",
+    "tiers": [
+     {
+      "tier": "1K",
+      "usd": 0.02
+     },
+     {
+      "tier": "2K",
+      "usd": 0.02
+     },
+     {
+      "tier": "4K",
+      "usd": 0.025
+     }
+    ]
+   },
+   "list_price": null,
+   "discount_vs_list": null,
+   "billing_rules": [
+    {
+     "rule": "per_returned_image"
+    }
+   ]
+  },
+  {
+   "id": "nano-banana-2-lite",
+   "name": "Nano Banana 2 Lite",
+   "provider": "google",
+   "category": "image",
+   "recommended_endpoint": "/v1/images/generations",
+   "endpoints": [
+    "/v1/images/edits",
+    "/v1/images/generations"
+   ],
+   "model_page": "https://argolink.io/en/models/nano-banana-2-lite",
+   "context_tokens": null,
+   "max_input_tokens": null,
+   "max_output_tokens": null,
+   "reads_images": null,
+   "reasoning_efforts": null,
+   "default_effort": null,
+   "image": {
+    "resolutions": [
+     "1k"
+    ],
+    "aspect_ratios": [
+     "1:1",
+     "16:9",
+     "9:16",
+     "4:3",
+     "3:4",
+     "3:2",
+     "2:3",
+     "5:4",
+     "4:5",
+     "21:9"
+    ],
+    "size_field": "aspect_ratio + resolution",
+    "max_outputs": 4,
+    "max_references": 14,
+    "response_formats": [
+     "b64_json"
+    ]
+   },
+   "video": null,
+   "price": {
+    "currency": "USD",
+    "unit": "per_image",
+    "tiers": [
+     {
+      "tier": "1K",
+      "usd": 0.01
+     }
+    ]
+   },
+   "list_price": null,
+   "discount_vs_list": null,
+   "billing_rules": [
+    {
+     "rule": "per_returned_image"
+    }
+   ]
+  },
+  {
+   "id": "nano-banana-pro",
+   "name": "Nano Banana Pro",
+   "provider": "google",
+   "category": "image",
+   "recommended_endpoint": "/v1/images/generations",
+   "endpoints": [
+    "/v1/images/edits",
+    "/v1/images/generations"
+   ],
+   "model_page": "https://argolink.io/en/models/nano-banana-pro",
+   "context_tokens": null,
+   "max_input_tokens": null,
+   "max_output_tokens": null,
+   "reads_images": null,
+   "reasoning_efforts": null,
+   "default_effort": null,
+   "image": {
+    "resolutions": [
+     "1k",
+     "2k",
+     "4k"
+    ],
+    "aspect_ratios": [
+     "1:1",
+     "16:9",
+     "9:16",
+     "4:3",
+     "3:4",
+     "3:2",
+     "2:3",
+     "5:4",
+     "4:5",
+     "21:9"
+    ],
+    "size_field": "aspect_ratio + resolution",
+    "max_outputs": 4,
+    "max_references": 14,
+    "response_formats": [
+     "b64_json"
+    ]
+   },
+   "video": null,
+   "price": {
+    "currency": "USD",
+    "unit": "per_image",
+    "tiers": [
+     {
+      "tier": "1K",
+      "usd": 0.03
+     },
+     {
+      "tier": "2K",
+      "usd": 0.03
+     },
+     {
+      "tier": "4K",
+      "usd": 0.03
+     }
+    ]
+   },
+   "list_price": null,
+   "discount_vs_list": null,
+   "billing_rules": [
+    {
+     "rule": "per_returned_image"
+    }
+   ]
+  },
+  {
+   "id": "grok-imagine-video-1.5",
+   "name": "Grok Imagine Video 1.5",
+   "provider": "xai",
+   "category": "video",
+   "recommended_endpoint": "/v1/videos/generations",
+   "endpoints": [
+    "/v1/videos/generations"
+   ],
+   "model_page": "https://argolink.io/en/models/grok-imagine-video-1.5",
+   "context_tokens": null,
+   "max_input_tokens": null,
+   "max_output_tokens": null,
+   "reads_images": null,
+   "reasoning_efforts": null,
+   "default_effort": null,
+   "image": null,
+   "video": null,
+   "price": {
+    "currency": "USD",
+    "unit": "per_output_second",
+    "tiers": [
+     {
+      "tier": "480p",
+      "usd": 0.064
+     },
+     {
+      "tier": "720p",
+      "usd": 0.112
+     },
+     {
+      "tier": "1080p",
+      "usd": 0.2
+     }
+    ]
+   },
+   "list_price": {
+    "currency": "USD",
+    "unit": "per_output_second",
+    "tiers": [
+     {
+      "tier": "480p",
+      "usd": 0.08
+     },
+     {
+      "tier": "720p",
+      "usd": 0.14
+     },
+     {
+      "tier": "1080p",
+      "usd": 0.25
+     }
+    ]
+   },
+   "discount_vs_list": 0.2,
+   "billing_rules": [
+    {
+     "rule": "per_output_second"
+    },
+    {
+     "rule": "failed_or_expired_not_billed"
+    }
+   ]
+  },
+  {
+   "id": "seedance-2.0",
+   "name": "Seedance 2.0",
+   "provider": "bytedance",
+   "category": "video",
+   "recommended_endpoint": "/v1/videos/generations",
+   "endpoints": [
+    "/v1/media/uploads",
+    "/v1/videos/generations"
+   ],
+   "model_page": "https://argolink.io/en/models/seedance-2.0",
+   "context_tokens": null,
+   "max_input_tokens": null,
+   "max_output_tokens": null,
+   "reads_images": null,
+   "reasoning_efforts": null,
+   "default_effort": null,
+   "image": null,
+   "video": {
+    "modes": [
+     "text",
+     "start_image",
+     "first_last_frames",
+     "multimodal_reference"
+    ],
+    "min_seconds": 4,
+    "max_seconds": 15,
+    "default_seconds": 5,
+    "resolutions": [
+     "480p",
+     "720p",
+     "1080p",
+     "4k"
+    ],
+    "default_resolution": "720p",
+    "aspect_ratios": [
+     "21:9",
+     "16:9",
+     "4:3",
+     "1:1",
+     "3:4",
+     "9:16",
+     "adaptive"
+    ],
+    "max_reference_images": 9,
+    "max_reference_videos": 3,
+    "max_reference_audios": 3,
+    "max_reference_assets": 15,
+    "soundtrack": "on unless generate_audio is false"
+   },
+   "price": {
+    "currency": "USD",
+    "unit": "per_output_second",
+    "tiers": [
+     {
+      "tier": "480p",
+      "usd": 0.053
+     },
+     {
+      "tier": "720p",
+      "usd": 0.11
+     },
+     {
+      "tier": "1080p",
+      "usd": 0.28
+     },
+     {
+      "tier": "4k",
+      "usd": 0.58
+     }
+    ]
+   },
+   "list_price": {
+    "currency": "USD",
+    "unit": "per_output_second",
+    "tiers": [
+     {
+      "tier": "480p",
+      "usd": 0.0703
+     },
+     {
+      "tier": "720p",
+      "usd": 0.1512
+     },
+     {
+      "tier": "1080p",
+      "usd": 0.3742
+     },
+     {
+      "tier": "4k",
+      "usd": 0.7691
+     }
+    ]
+   },
+   "discount_vs_list": 0.25,
+   "billing_rules": [
+    {
+     "rule": "per_output_second"
+    },
+    {
+     "rule": "reference_video_seconds_billed"
+    },
+    {
+     "rule": "failed_or_expired_not_billed"
+    }
+   ]
+  },
+  {
+   "id": "seedance-2.0-fast",
+   "name": "Seedance 2.0 Fast",
+   "provider": "bytedance",
+   "category": "video",
+   "recommended_endpoint": "/v1/videos/generations",
+   "endpoints": [
+    "/v1/media/uploads",
+    "/v1/videos/generations"
+   ],
+   "model_page": "https://argolink.io/en/models/seedance-2.0-fast",
+   "context_tokens": null,
+   "max_input_tokens": null,
+   "max_output_tokens": null,
+   "reads_images": null,
+   "reasoning_efforts": null,
+   "default_effort": null,
+   "image": null,
+   "video": {
+    "modes": [
+     "text",
+     "start_image",
+     "first_last_frames",
+     "multimodal_reference"
+    ],
+    "min_seconds": 4,
+    "max_seconds": 15,
+    "default_seconds": 5,
+    "resolutions": [
+     "480p",
+     "720p"
+    ],
+    "default_resolution": "720p",
+    "aspect_ratios": [
+     "21:9",
+     "16:9",
+     "4:3",
+     "1:1",
+     "3:4",
+     "9:16",
+     "adaptive"
+    ],
+    "max_reference_images": 9,
+    "max_reference_videos": 3,
+    "max_reference_audios": 3,
+    "max_reference_assets": 15,
+    "soundtrack": "on unless generate_audio is false"
+   },
+   "price": {
+    "currency": "USD",
+    "unit": "per_output_second",
+    "tiers": [
+     {
+      "tier": "480p",
+      "usd": 0.042
+     },
+     {
+      "tier": "720p",
+      "usd": 0.091
+     }
+    ]
+   },
+   "list_price": {
+    "currency": "USD",
+    "unit": "per_output_second",
+    "tiers": [
+     {
+      "tier": "480p",
+      "usd": 0.0562
+     },
+     {
+      "tier": "720p",
+      "usd": 0.121
+     }
+    ]
+   },
+   "discount_vs_list": 0.25,
+   "billing_rules": [
+    {
+     "rule": "per_output_second"
+    },
+    {
+     "rule": "reference_video_seconds_billed"
+    },
+    {
+     "rule": "failed_or_expired_not_billed"
+    }
+   ]
+  },
+  {
+   "id": "seedance-2.0-mini",
+   "name": "Seedance 2.0 Mini",
+   "provider": "bytedance",
+   "category": "video",
+   "recommended_endpoint": "/v1/videos/generations",
+   "endpoints": [
+    "/v1/media/uploads",
+    "/v1/videos/generations"
+   ],
+   "model_page": "https://argolink.io/en/models/seedance-2.0-mini",
+   "context_tokens": null,
+   "max_input_tokens": null,
+   "max_output_tokens": null,
+   "reads_images": null,
+   "reasoning_efforts": null,
+   "default_effort": null,
+   "image": null,
+   "video": {
+    "modes": [
+     "text",
+     "start_image",
+     "first_last_frames",
+     "multimodal_reference"
+    ],
+    "min_seconds": 4,
+    "max_seconds": 15,
+    "default_seconds": 5,
+    "resolutions": [
+     "480p",
+     "720p"
+    ],
+    "default_resolution": "720p",
+    "aspect_ratios": [
+     "21:9",
+     "16:9",
+     "4:3",
+     "1:1",
+     "3:4",
+     "9:16",
+     "adaptive"
+    ],
+    "max_reference_images": 9,
+    "max_reference_videos": 3,
+    "max_reference_audios": 3,
+    "max_reference_assets": 15,
+    "soundtrack": "on unless generate_audio is false"
+   },
+   "price": {
+    "currency": "USD",
+    "unit": "per_output_second",
+    "tiers": [
+     {
+      "tier": "480p",
+      "usd": 0.026
+     },
+     {
+      "tier": "720p",
+      "usd": 0.057
+     }
+    ]
+   },
+   "list_price": {
+    "currency": "USD",
+    "unit": "per_output_second",
+    "tiers": [
+     {
+      "tier": "480p",
+      "usd": 0.0352
+     },
+     {
+      "tier": "720p",
+      "usd": 0.0756
+     }
+    ]
+   },
+   "discount_vs_list": 0.25,
+   "billing_rules": [
+    {
+     "rule": "per_output_second"
+    },
+    {
+     "rule": "reference_video_seconds_billed"
+    },
+    {
+     "rule": "failed_or_expired_not_billed"
+    }
+   ]
+  },
+  {
+   "id": "seedance-2.5",
+   "name": "Seedance 2.5",
+   "provider": "bytedance",
+   "category": "video",
+   "recommended_endpoint": "/v1/videos/generations",
+   "endpoints": [
+    "/v1/media/uploads",
+    "/v1/videos/generations"
+   ],
+   "model_page": "https://argolink.io/en/models/seedance-2.5",
+   "context_tokens": null,
+   "max_input_tokens": null,
+   "max_output_tokens": null,
+   "reads_images": null,
+   "reasoning_efforts": null,
+   "default_effort": null,
+   "image": null,
+   "video": {
+    "modes": [
+     "text",
+     "start_image",
+     "first_last_frames",
+     "multimodal_reference",
+     "video_edit"
+    ],
+    "min_seconds": 4,
+    "max_seconds": 30,
+    "default_seconds": 5,
+    "resolutions": [
+     "480p",
+     "720p",
+     "1080p"
+    ],
+    "default_resolution": "720p",
+    "aspect_ratios": [
+     "21:9",
+     "16:9",
+     "4:3",
+     "1:1",
+     "3:4",
+     "9:16",
+     "adaptive"
+    ],
+    "max_reference_images": 30,
+    "max_reference_videos": 10,
+    "max_reference_audios": 10,
+    "max_reference_assets": 50,
+    "soundtrack": "on unless generate_audio is false"
+   },
+   "price": {
+    "currency": "USD",
+    "unit": "per_output_second",
+    "tiers": [
+     {
+      "tier": "480p",
+      "usd": 0.0874
+     },
+     {
+      "tier": "720p",
+      "usd": 0.196
+     },
+     {
+      "tier": "1080p",
+      "usd": 0.483
+     }
+    ]
+   },
+   "list_price": {
+    "currency": "USD",
+    "unit": "per_output_second",
+    "tiers": [
+     {
+      "tier": "480p",
+      "usd": 0.1028
+     },
+     {
+      "tier": "720p",
+      "usd": 0.2311
+     },
+     {
+      "tier": "1080p",
+      "usd": 0.5686
+     }
+    ]
+   },
+   "discount_vs_list": 0.15,
+   "billing_rules": [
+    {
+     "rule": "per_output_second"
+    },
+    {
+     "rule": "reference_video_seconds_billed"
+    },
+    {
+     "rule": "failed_or_expired_not_billed"
+    }
+   ]
+  },
+  {
+   "id": "wan-3",
+   "name": "Wan 3.0",
+   "provider": "alibaba",
+   "category": "video",
+   "recommended_endpoint": "/v1/videos/generations",
+   "endpoints": [
+    "/v1/media/uploads",
+    "/v1/videos/generations"
+   ],
+   "model_page": "https://argolink.io/en/models/wan-3",
+   "context_tokens": null,
+   "max_input_tokens": null,
+   "max_output_tokens": null,
+   "reads_images": null,
+   "reasoning_efforts": null,
+   "default_effort": null,
+   "image": null,
+   "video": {
+    "modes": [
+     "text",
+     "start_image",
+     "first_last_frames",
+     "multimodal_reference",
+     "video_edit"
+    ],
+    "min_seconds": 2,
+    "max_seconds": 30,
+    "default_seconds": 5,
+    "resolutions": [
+     "480p",
+     "720p",
+     "1080p"
+    ],
+    "default_resolution": "720p",
+    "aspect_ratios": [
+     "21:9",
+     "16:9",
+     "4:3",
+     "1:1",
+     "3:4",
+     "9:16",
+     "adaptive"
+    ],
+    "max_reference_images": 10,
+    "max_reference_videos": 5,
+    "max_reference_audios": 5,
+    "max_reference_assets": 20,
+    "soundtrack": "on unless generate_audio is false",
+    "max_prompt_chars": 20000,
+    "seed": true
+   },
+   "price": {
+    "currency": "USD",
+    "unit": "per_output_second",
+    "tiers": [
+     {
+      "tier": "480p",
+      "usd": 0.038
+     },
+     {
+      "tier": "720p",
+      "usd": 0.075
+     },
+     {
+      "tier": "1080p",
+      "usd": 0.15
+     }
+    ]
+   },
+   "list_price": {
+    "currency": "USD",
+    "unit": "per_output_second",
+    "tiers": [
+     {
+      "tier": "480p",
+      "usd": 0.05
+     },
+     {
+      "tier": "720p",
+      "usd": 0.1
+     },
+     {
+      "tier": "1080p",
+      "usd": 0.2
+     }
+    ]
+   },
+   "discount_vs_list": 0.25,
+   "billing_rules": [
+    {
+     "rule": "per_output_second"
+    },
+    {
+     "rule": "reference_video_seconds_billed"
+    },
+    {
+     "rule": "failed_or_expired_not_billed"
+    }
+   ]
+  },
+  {
+   "id": "wan-3-prime",
+   "name": "Wan 3.0 Prime",
+   "provider": "alibaba",
+   "category": "video",
+   "recommended_endpoint": "/v1/videos/generations",
+   "endpoints": [
+    "/v1/media/uploads",
+    "/v1/videos/generations"
+   ],
+   "model_page": "https://argolink.io/en/models/wan-3-prime",
+   "context_tokens": null,
+   "max_input_tokens": null,
+   "max_output_tokens": null,
+   "reads_images": null,
+   "reasoning_efforts": null,
+   "default_effort": null,
+   "image": null,
+   "video": {
+    "modes": [
+     "text",
+     "multimodal_reference"
+    ],
+    "min_seconds": 4,
+    "max_seconds": 30,
+    "default_seconds": 5,
+    "resolutions": [
+     "480p",
+     "720p",
+     "1080p"
+    ],
+    "default_resolution": "720p",
+    "aspect_ratios": [
+     "16:9",
+     "1:1",
+     "9:16"
+    ],
+    "max_reference_images": 10,
+    "max_reference_videos": 5,
+    "max_reference_audios": 5,
+    "max_reference_assets": 20,
+    "soundtrack": "always generated",
+    "max_prompt_chars": 20000
+   },
+   "price": {
+    "currency": "USD",
+    "unit": "per_output_second",
+    "tiers": [
+     {
+      "tier": "480p",
+      "usd": 0.051
+     },
+     {
+      "tier": "720p",
+      "usd": 0.11
+     },
+     {
+      "tier": "1080p",
+      "usd": 0.21
+     }
+    ]
+   },
+   "list_price": {
+    "currency": "USD",
+    "unit": "per_output_second",
+    "tiers": [
+     {
+      "tier": "480p",
+      "usd": 0.068
+     },
+     {
+      "tier": "720p",
+      "usd": 0.14
+     },
+     {
+      "tier": "1080p",
+      "usd": 0.28
+     }
+    ]
+   },
+   "discount_vs_list": 0.25,
+   "billing_rules": [
+    {
+     "rule": "per_output_second"
+    },
+    {
+     "rule": "reference_video_seconds_billed"
+    },
+    {
+     "rule": "failed_or_expired_not_billed"
+    }
+   ]
+  },
+  {
+   "id": "minimax-h3",
+   "name": "MiniMax H3",
+   "provider": "minimax",
+   "category": "video",
+   "recommended_endpoint": "/v1/videos/generations",
+   "endpoints": [
+    "/v1/media/uploads",
+    "/v1/videos/generations"
+   ],
+   "model_page": "https://argolink.io/en/models/minimax-h3",
+   "context_tokens": null,
+   "max_input_tokens": null,
+   "max_output_tokens": null,
+   "reads_images": null,
+   "reasoning_efforts": null,
+   "default_effort": null,
+   "image": null,
+   "video": {
+    "modes": [
+     "text",
+     "start_image",
+     "first_last_frames",
+     "multimodal_reference"
+    ],
+    "min_seconds": 4,
+    "max_seconds": 15,
+    "default_seconds": 5,
+    "resolutions": [
+     "768p",
+     "2k"
+    ],
+    "default_resolution": "768p",
+    "aspect_ratios": [
+     "21:9",
+     "16:9",
+     "4:3",
+     "1:1",
+     "3:4",
+     "9:16",
+     "adaptive"
+    ],
+    "max_reference_images": 9,
+    "max_reference_videos": 3,
+    "max_reference_audios": 3,
+    "max_reference_assets": 12,
+    "soundtrack": "always generated",
+    "max_prompt_chars": 7000
+   },
+   "price": {
+    "currency": "USD",
+    "unit": "per_output_second",
+    "tiers": [
+     {
+      "tier": "768p",
+      "usd": 0.039
+     },
+     {
+      "tier": "2k",
+      "usd": 0.064
+     }
+    ]
+   },
+   "list_price": {
+    "currency": "USD",
+    "unit": "per_output_second",
+    "tiers": [
+     {
+      "tier": "768p",
+      "usd": 0.08
+     },
+     {
+      "tier": "2k",
+      "usd": 0.13
+     }
+    ]
+   },
+   "discount_vs_list": 0.51,
+   "billing_rules": [
+    {
+     "rule": "per_output_second"
+    },
+    {
+     "rule": "reference_video_seconds_billed"
+    },
+    {
+     "rule": "failed_or_expired_not_billed"
+    }
+   ]
+  }
+ ]
+}

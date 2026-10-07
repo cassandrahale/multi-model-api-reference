@@ -1,0 +1,87 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/cassandrahale/multi-model-api-reference/schema/model.schema.json",
+  "title": "models.json",
+  "type": "object",
+  "required": ["source", "fetched", "catalog_revision", "count", "models"],
+  "properties": {
+    "schema": { "type": "string" },
+    "source": { "type": "string", "format": "uri" },
+    "fetched": { "type": "string", "format": "date" },
+    "catalog_revision": { "type": "string" },
+    "count": { "type": "integer", "minimum": 1 },
+    "models": { "type": "array", "items": { "$ref": "#/$defs/model" } }
+  },
+  "$defs": {
+    "tokenPrice": {
+      "type": "object",
+      "required": ["currency", "unit", "input", "output"],
+      "properties": {
+        "currency": { "const": "USD" },
+        "unit": { "const": "per_1m_tokens" },
+        "input": { "type": "number", "minimum": 0 },
+        "output": { "type": "number", "minimum": 0 },
+        "cached_input": { "type": "number", "minimum": 0 },
+        "cache_write": { "type": "number", "minimum": 0 }
+      },
+      "additionalProperties": false
+    },
+    "tierPrice": {
+      "type": "object",
+      "required": ["currency", "unit", "tiers"],
+      "properties": {
+        "currency": { "const": "USD" },
+        "unit": { "enum": ["per_image", "per_output_second"] },
+        "tiers": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "required": ["tier", "usd"],
+            "properties": { "tier": { "type": "string" }, "usd": { "type": "number", "exclusiveMinimum": 0 } },
+            "additionalProperties": false
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "price": { "oneOf": [{ "$ref": "#/$defs/tokenPrice" }, { "$ref": "#/$defs/tierPrice" }] },
+    "rule": {
+      "type": "object",
+      "required": ["rule"],
+      "properties": {
+        "rule": {
+          "enum": ["reasoning_tokens_billed_as_output", "long_context", "fast_mode", "max_effort", "cache_write_1h",
+                   "peak_hours", "per_returned_image", "tier_by_longest_edge", "per_output_second",
+                   "reference_video_seconds_billed", "failed_or_expired_not_billed"]
+        }
+      }
+    },
+    "model": {
+      "type": "object",
+      "required": ["id", "name", "provider", "category", "recommended_endpoint", "endpoints", "model_page",
+                   "price", "list_price", "discount_vs_list", "billing_rules"],
+      "properties": {
+        "id": { "type": "string", "pattern": "^[a-z0-9][a-z0-9.\\-]*$" },
+        "name": { "type": "string" },
+        "provider": { "enum": ["openai", "anthropic", "xai", "google", "deepseek", "zhipu", "kimi", "bytedance", "alibaba", "minimax"] },
+        "category": { "enum": ["chat", "image", "video"] },
+        "recommended_endpoint": { "type": "string", "pattern": "^/v1/" },
+        "endpoints": { "type": "array", "minItems": 1, "items": { "type": "string", "pattern": "^/v1/" } },
+        "model_page": { "type": "string", "format": "uri" },
+        "context_tokens": { "type": ["integer", "null"] },
+        "max_input_tokens": { "type": ["integer", "null"] },
+        "max_output_tokens": { "type": ["integer", "null"] },
+        "reads_images": { "type": ["boolean", "null"] },
+        "reasoning_efforts": { "type": ["array", "null"], "items": { "type": "string" } },
+        "default_effort": { "type": ["string", "null"] },
+        "image": { "type": ["object", "null"] },
+        "video": { "type": ["object", "null"] },
+        "price": { "$ref": "#/$defs/price" },
+        "list_price": { "oneOf": [{ "type": "null" }, { "$ref": "#/$defs/price" }] },
+        "discount_vs_list": { "type": ["number", "null"], "minimum": 0, "maximum": 1 },
+        "billing_rules": { "type": "array", "items": { "$ref": "#/$defs/rule" } }
+      }
+    }
+  }
+}

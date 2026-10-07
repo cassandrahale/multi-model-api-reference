@@ -1,0 +1,108 @@
+{
+ "provider": "alibaba",
+ "fetched": "2026-10-07",
+ "models": {
+  "wan-3": {
+   "category": "video",
+   "price": {
+    "currency": "USD",
+    "unit": "per_output_second",
+    "tiers": [
+     {
+      "tier": "480p",
+      "usd": 0.038
+     },
+     {
+      "tier": "720p",
+      "usd": 0.075
+     },
+     {
+      "tier": "1080p",
+      "usd": 0.15
+     }
+    ]
+   },
+   "list_price": {
+    "currency": "USD",
+    "unit": "per_output_second",
+    "tiers": [
+     {
+      "tier": "480p",
+      "usd": 0.05
+     },
+     {
+      "tier": "720p",
+      "usd": 0.1
+     },
+     {
+      "tier": "1080p",
+      "usd": 0.2
+     }
+    ]
+   },
+   "discount_vs_list": 0.25,
+   "billing_rules": [
+    {
+     "rule": "per_output_second"
+    },
+    {
+     "rule": "reference_video_seconds_billed"
+    },
+    {
+     "rule": "failed_or_expired_not_billed"
+    }
+   ]
+  },
+  "wan-3-prime": {
+   "category": "video",
+   "price": {
+    "currency": "USD",
+    "unit": "per_output_second",
+    "tiers": [
+     {
+      "tier": "480p",
+      "usd": 0.051
+     },
+     {
+      "tier": "720p",
+      "usd": 0.11
+     },
+     {
+      "tier": "1080p",
+      "usd": 0.21
+     }
+    ]
+   },
+   "list_price": {
+    "currency": "USD",
+    "unit": "per_output_second",
+    "tiers": [
+     {
+      "tier": "480p",
+      "usd": 0.068
+     },
+     {
+      "tier": "720p",
+      "usd": 0.14
+     },
+     {
+      "tier": "1080p",
+      "usd": 0.28
+     }
+    ]
+   },
+   "discount_vs_list": 0.25,
+   "billing_rules": [
+    {
+     "rule": "per_output_second"
+    },
+    {
+     "rule": "reference_video_seconds_billed"
+    },
+    {
+     "rule": "failed_or_expired_not_billed"
+    }
+   ]
+  }
+ }
+}

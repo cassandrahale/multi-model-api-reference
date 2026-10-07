@@ -1,0 +1,82 @@
+{
+ "provider": "google",
+ "fetched": "2026-10-07",
+ "models": {
+  "nano-banana-2": {
+   "category": "image",
+   "price": {
+    "currency": "USD",
+    "unit": "per_image",
+    "tiers": [
+     {
+      "tier": "1K",
+      "usd": 0.02
+     },
+     {
+      "tier": "2K",
+      "usd": 0.02
+     },
+     {
+      "tier": "4K",
+      "usd": 0.025
+     }
+    ]
+   },
+   "list_price": null,
+   "discount_vs_list": null,
+   "billing_rules": [
+    {
+     "rule": "per_returned_image"
+    }
+   ]
+  },
+  "nano-banana-2-lite": {
+   "category": "image",
+   "price": {
+    "currency": "USD",
+    "unit": "per_image",
+    "tiers": [
+     {
+      "tier": "1K",
+      "usd": 0.01
+     }
+    ]
+   },
+   "list_price": null,
+   "discount_vs_list": null,
+   "billing_rules": [
+    {
+     "rule": "per_returned_image"
+    }
+   ]
+  },
+  "nano-banana-pro": {
+   "category": "image",
+   "price": {
+    "currency": "USD",
+    "unit": "per_image",
+    "tiers": [
+     {
+      "tier": "1K",
+      "usd": 0.03
+     },
+     {
+      "tier": "2K",
+      "usd": 0.03
+     },
+     {
+      "tier": "4K",
+      "usd": 0.03
+     }
+    ]
+   },
+   "list_price": null,
+   "discount_vs_list": null,
+   "billing_rules": [
+    {
+     "rule": "per_returned_image"
+    }
+   ]
+  }
+ }
+}

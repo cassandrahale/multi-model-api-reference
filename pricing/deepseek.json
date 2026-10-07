@@ -1,0 +1,62 @@
+{
+ "provider": "deepseek",
+ "fetched": "2026-10-07",
+ "models": {
+  "deepseek-v4-pro": {
+   "category": "chat",
+   "price": {
+    "currency": "USD",
+    "unit": "per_1m_tokens",
+    "input": 0.528,
+    "output": 1.584,
+    "cached_input": 0.0176
+   },
+   "list_price": {
+    "currency": "USD",
+    "unit": "per_1m_tokens",
+    "input": 0.66,
+    "output": 1.98,
+    "cached_input": 0.022
+   },
+   "discount_vs_list": 0.2,
+   "billing_rules": [
+    {
+     "rule": "reasoning_tokens_billed_as_output"
+    },
+    {
+     "rule": "peak_hours",
+     "window": "Mon-Fri 09:00-12:00 and 14:00-18:00 Asia/Shanghai",
+     "multiplier": 2
+    }
+   ]
+  },
+  "deepseek-v4.1-flash": {
+   "category": "chat",
+   "price": {
+    "currency": "USD",
+    "unit": "per_1m_tokens",
+    "input": 0.12,
+    "output": 0.48,
+    "cached_input": 0.0024
+   },
+   "list_price": {
+    "currency": "USD",
+    "unit": "per_1m_tokens",
+    "input": 0.15,
+    "output": 0.6,
+    "cached_input": 0.003
+   },
+   "discount_vs_list": 0.2,
+   "billing_rules": [
+    {
+     "rule": "reasoning_tokens_billed_as_output"
+    },
+    {
+     "rule": "peak_hours",
+     "window": "Mon-Fri 09:00-12:00 and 14:00-18:00 Asia/Shanghai",
+     "multiplier": 2
+    }
+   ]
+  }
+ }
+}

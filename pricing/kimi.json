@@ -1,0 +1,75 @@
+{
+ "provider": "kimi",
+ "fetched": "2026-10-07",
+ "models": {
+  "kimi-k2.6": {
+   "category": "chat",
+   "price": {
+    "currency": "USD",
+    "unit": "per_1m_tokens",
+    "input": 0.76,
+    "output": 3.2,
+    "cached_input": 0.128
+   },
+   "list_price": {
+    "currency": "USD",
+    "unit": "per_1m_tokens",
+    "input": 0.95,
+    "output": 4,
+    "cached_input": 0.16
+   },
+   "discount_vs_list": 0.2,
+   "billing_rules": [
+    {
+     "rule": "reasoning_tokens_billed_as_output"
+    }
+   ]
+  },
+  "kimi-k2.7-code": {
+   "category": "chat",
+   "price": {
+    "currency": "USD",
+    "unit": "per_1m_tokens",
+    "input": 0.76,
+    "output": 3.2,
+    "cached_input": 0.152
+   },
+   "list_price": {
+    "currency": "USD",
+    "unit": "per_1m_tokens",
+    "input": 0.95,
+    "output": 4,
+    "cached_input": 0.19
+   },
+   "discount_vs_list": 0.2,
+   "billing_rules": [
+    {
+     "rule": "reasoning_tokens_billed_as_output"
+    }
+   ]
+  },
+  "kimi-k3": {
+   "category": "chat",
+   "price": {
+    "currency": "USD",
+    "unit": "per_1m_tokens",
+    "input": 2.4,
+    "output": 12,
+    "cached_input": 0.24
+   },
+   "list_price": {
+    "currency": "USD",
+    "unit": "per_1m_tokens",
+    "input": 3,
+    "output": 15,
+    "cached_input": 0.3
+   },
+   "discount_vs_list": 0.2,
+   "billing_rules": [
+    {
+     "rule": "reasoning_tokens_billed_as_output"
+    }
+   ]
+  }
+ }
+}

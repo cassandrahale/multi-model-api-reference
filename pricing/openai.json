@@ -1,0 +1,420 @@
+{
+ "provider": "openai",
+ "fetched": "2026-10-07",
+ "models": {
+  "gpt-5.4": {
+   "category": "chat",
+   "price": {
+    "currency": "USD",
+    "unit": "per_1m_tokens",
+    "input": 0.75,
+    "output": 4.5,
+    "cached_input": 0.075
+   },
+   "list_price": {
+    "currency": "USD",
+    "unit": "per_1m_tokens",
+    "input": 2.5,
+    "output": 15,
+    "cached_input": 0.25
+   },
+   "discount_vs_list": 0.7,
+   "billing_rules": [
+    {
+     "rule": "reasoning_tokens_billed_as_output"
+    },
+    {
+     "rule": "long_context",
+     "prompt_tokens_over": 272000,
+     "input_multiplier": 2,
+     "output_multiplier": 1.5
+    },
+    {
+     "rule": "fast_mode",
+     "request_field": "service_tier: priority",
+     "multiplier": 2
+    }
+   ]
+  },
+  "gpt-5.4-mini": {
+   "category": "chat",
+   "price": {
+    "currency": "USD",
+    "unit": "per_1m_tokens",
+    "input": 0.225,
+    "output": 1.35,
+    "cached_input": 0.0225
+   },
+   "list_price": {
+    "currency": "USD",
+    "unit": "per_1m_tokens",
+    "input": 0.75,
+    "output": 4.5,
+    "cached_input": 0.075
+   },
+   "discount_vs_list": 0.7,
+   "billing_rules": [
+    {
+     "rule": "reasoning_tokens_billed_as_output"
+    },
+    {
+     "rule": "fast_mode",
+     "request_field": "service_tier: priority",
+     "multiplier": 2
+    }
+   ]
+  },
+  "gpt-5.5": {
+   "category": "chat",
+   "price": {
+    "currency": "USD",
+    "unit": "per_1m_tokens",
+    "input": 1.5,
+    "output": 9,
+    "cached_input": 0.15
+   },
+   "list_price": {
+    "currency": "USD",
+    "unit": "per_1m_tokens",
+    "input": 5,
+    "output": 30,
+    "cached_input": 0.5
+   },
+   "discount_vs_list": 0.7,
+   "billing_rules": [
+    {
+     "rule": "reasoning_tokens_billed_as_output"
+    },
+    {
+     "rule": "long_context",
+     "prompt_tokens_over": 272000,
+     "input_multiplier": 2,
+     "output_multiplier": 1.5
+    },
+    {
+     "rule": "fast_mode",
+     "request_field": "service_tier: priority",
+     "multiplier": 2.5
+    }
+   ]
+  },
+  "gpt-5.6-luna": {
+   "category": "chat",
+   "price": {
+    "currency": "USD",
+    "unit": "per_1m_tokens",
+    "input": 0.06,
+    "output": 0.36,
+    "cached_input": 0.006,
+    "cache_write": 0.075
+   },
+   "list_price": {
+    "currency": "USD",
+    "unit": "per_1m_tokens",
+    "input": 0.2,
+    "output": 1.2,
+    "cached_input": 0.02,
+    "cache_write": 0.25
+   },
+   "discount_vs_list": 0.7,
+   "billing_rules": [
+    {
+     "rule": "reasoning_tokens_billed_as_output"
+    },
+    {
+     "rule": "long_context",
+     "prompt_tokens_over": 272000,
+     "input_multiplier": 2,
+     "output_multiplier": 1.5
+    },
+    {
+     "rule": "fast_mode",
+     "request_field": "service_tier: priority",
+     "multiplier": 2
+    }
+   ]
+  },
+  "gpt-5.6-sol": {
+   "category": "chat",
+   "price": {
+    "currency": "USD",
+    "unit": "per_1m_tokens",
+    "input": 1.5,
+    "output": 9,
+    "cached_input": 0.15,
+    "cache_write": 1.875
+   },
+   "list_price": {
+    "currency": "USD",
+    "unit": "per_1m_tokens",
+    "input": 5,
+    "output": 30,
+    "cached_input": 0.5,
+    "cache_write": 6.25
+   },
+   "discount_vs_list": 0.7,
+   "billing_rules": [
+    {
+     "rule": "reasoning_tokens_billed_as_output"
+    },
+    {
+     "rule": "long_context",
+     "prompt_tokens_over": 272000,
+     "input_multiplier": 2,
+     "output_multiplier": 1.5
+    },
+    {
+     "rule": "fast_mode",
+     "request_field": "service_tier: priority",
+     "multiplier": 2
+    }
+   ]
+  },
+  "gpt-5.6-terra": {
+   "category": "chat",
+   "price": {
+    "currency": "USD",
+    "unit": "per_1m_tokens",
+    "input": 0.6,
+    "output": 3.6,
+    "cached_input": 0.06,
+    "cache_write": 0.75
+   },
+   "list_price": {
+    "currency": "USD",
+    "unit": "per_1m_tokens",
+    "input": 2,
+    "output": 12,
+    "cached_input": 0.2,
+    "cache_write": 2.5
+   },
+   "discount_vs_list": 0.7,
+   "billing_rules": [
+    {
+     "rule": "reasoning_tokens_billed_as_output"
+    },
+    {
+     "rule": "long_context",
+     "prompt_tokens_over": 272000,
+     "input_multiplier": 2,
+     "output_multiplier": 1.5
+    },
+    {
+     "rule": "fast_mode",
+     "request_field": "service_tier: priority",
+     "multiplier": 2
+    }
+   ]
+  },
+  "gpt-6-astra": {
+   "category": "chat",
+   "price": {
+    "currency": "USD",
+    "unit": "per_1m_tokens",
+    "input": 3,
+    "output": 15,
+    "cached_input": 0.3,
+    "cache_write": 3.75
+   },
+   "list_price": {
+    "currency": "USD",
+    "unit": "per_1m_tokens",
+    "input": 10,
+    "output": 50,
+    "cached_input": 1,
+    "cache_write": 12.5
+   },
+   "discount_vs_list": 0.7,
+   "billing_rules": [
+    {
+     "rule": "reasoning_tokens_billed_as_output"
+    },
+    {
+     "rule": "long_context",
+     "prompt_tokens_over": 272000,
+     "input_multiplier": 2,
+     "output_multiplier": 1.5
+    },
+    {
+     "rule": "fast_mode",
+     "request_field": "service_tier: priority",
+     "multiplier": 2
+    }
+   ]
+  },
+  "gpt-6-sol": {
+   "category": "chat",
+   "price": {
+    "currency": "USD",
+    "unit": "per_1m_tokens",
+    "input": 0.6,
+    "output": 3,
+    "cached_input": 0.06,
+    "cache_write": 0.75
+   },
+   "list_price": {
+    "currency": "USD",
+    "unit": "per_1m_tokens",
+    "input": 2,
+    "output": 10,
+    "cached_input": 0.2,
+    "cache_write": 2.5
+   },
+   "discount_vs_list": 0.7,
+   "billing_rules": [
+    {
+     "rule": "reasoning_tokens_billed_as_output"
+    },
+    {
+     "rule": "long_context",
+     "prompt_tokens_over": 272000,
+     "input_multiplier": 2,
+     "output_multiplier": 1.5
+    },
+    {
+     "rule": "fast_mode",
+     "request_field": "service_tier: priority",
+     "multiplier": 2
+    }
+   ]
+  },
+  "gpt-6.1-sol": {
+   "category": "chat",
+   "price": {
+    "currency": "USD",
+    "unit": "per_1m_tokens",
+    "input": 0.6,
+    "output": 3,
+    "cached_input": 0.03,
+    "cache_write": 0.75
+   },
+   "list_price": {
+    "currency": "USD",
+    "unit": "per_1m_tokens",
+    "input": 2,
+    "output": 10,
+    "cached_input": 0.1,
+    "cache_write": 2.5
+   },
+   "discount_vs_list": 0.7,
+   "billing_rules": [
+    {
+     "rule": "reasoning_tokens_billed_as_output"
+    },
+    {
+     "rule": "long_context",
+     "prompt_tokens_over": 272000,
+     "input_multiplier": 2,
+     "output_multiplier": 1.5
+    },
+    {
+     "rule": "fast_mode",
+     "request_field": "service_tier: priority",
+     "multiplier": 2
+    }
+   ]
+  },
+  "gpt-image-2": {
+   "category": "image",
+   "price": {
+    "currency": "USD",
+    "unit": "per_image",
+    "tiers": [
+     {
+      "tier": "1K",
+      "usd": 0.015
+     },
+     {
+      "tier": "2K",
+      "usd": 0.015
+     },
+     {
+      "tier": "4K",
+      "usd": 0.02
+     }
+    ]
+   },
+   "list_price": null,
+   "discount_vs_list": null,
+   "billing_rules": [
+    {
+     "rule": "per_returned_image"
+    },
+    {
+     "rule": "tier_by_longest_edge",
+     "1K": "<=1024",
+     "2K": "1025-2048",
+     "4K": ">2048"
+    }
+   ]
+  },
+  "gpt-image-2.5-flare": {
+   "category": "image",
+   "price": {
+    "currency": "USD",
+    "unit": "per_image",
+    "tiers": [
+     {
+      "tier": "1K",
+      "usd": 0.015
+     },
+     {
+      "tier": "2K",
+      "usd": 0.015
+     },
+     {
+      "tier": "4K",
+      "usd": 0.02
+     }
+    ]
+   },
+   "list_price": null,
+   "discount_vs_list": null,
+   "billing_rules": [
+    {
+     "rule": "per_returned_image"
+    },
+    {
+     "rule": "tier_by_longest_edge",
+     "1K": "<=1024",
+     "2K": "1025-2048",
+     "4K": ">2048"
+    }
+   ]
+  },
+  "gpt-image-2.5-sunburst": {
+   "category": "image",
+   "price": {
+    "currency": "USD",
+    "unit": "per_image",
+    "tiers": [
+     {
+      "tier": "1K",
+      "usd": 0.015
+     },
+     {
+      "tier": "2K",
+      "usd": 0.015
+     },
+     {
+      "tier": "4K",
+      "usd": 0.02
+     }
+    ]
+   },
+   "list_price": null,
+   "discount_vs_list": null,
+   "billing_rules": [
+    {
+     "rule": "per_returned_image"
+    },
+    {
+     "rule": "tier_by_longest_edge",
+     "1K": "<=1024",
+     "2K": "1025-2048",
+     "4K": ">2048"
+    }
+   ]
+  }
+ }
+}

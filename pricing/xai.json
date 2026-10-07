@@ -1,0 +1,195 @@
+{
+ "provider": "xai",
+ "fetched": "2026-10-07",
+ "models": {
+  "grok-4.5": {
+   "category": "chat",
+   "price": {
+    "currency": "USD",
+    "unit": "per_1m_tokens",
+    "input": 0.6,
+    "output": 1.8,
+    "cached_input": 0.09
+   },
+   "list_price": {
+    "currency": "USD",
+    "unit": "per_1m_tokens",
+    "input": 2,
+    "output": 6,
+    "cached_input": 0.3
+   },
+   "discount_vs_list": 0.7,
+   "billing_rules": [
+    {
+     "rule": "reasoning_tokens_billed_as_output"
+    }
+   ]
+  },
+  "grok-4.6": {
+   "category": "chat",
+   "price": {
+    "currency": "USD",
+    "unit": "per_1m_tokens",
+    "input": 0.6,
+    "output": 1.8,
+    "cached_input": 0.15
+   },
+   "list_price": {
+    "currency": "USD",
+    "unit": "per_1m_tokens",
+    "input": 2,
+    "output": 6,
+    "cached_input": 0.5
+   },
+   "discount_vs_list": 0.7,
+   "billing_rules": [
+    {
+     "rule": "reasoning_tokens_billed_as_output"
+    }
+   ]
+  },
+  "grok-4.7": {
+   "category": "chat",
+   "price": {
+    "currency": "USD",
+    "unit": "per_1m_tokens",
+    "input": 0.6,
+    "output": 1.8,
+    "cached_input": 0.15
+   },
+   "list_price": {
+    "currency": "USD",
+    "unit": "per_1m_tokens",
+    "input": 2,
+    "output": 6,
+    "cached_input": 0.5
+   },
+   "discount_vs_list": 0.7,
+   "billing_rules": [
+    {
+     "rule": "reasoning_tokens_billed_as_output"
+    }
+   ]
+  },
+  "grok-imagine-image": {
+   "category": "image",
+   "price": {
+    "currency": "USD",
+    "unit": "per_image",
+    "tiers": [
+     {
+      "tier": "1K",
+      "usd": 0.015
+     },
+     {
+      "tier": "2K",
+      "usd": 0.015
+     }
+    ]
+   },
+   "list_price": null,
+   "discount_vs_list": null,
+   "billing_rules": [
+    {
+     "rule": "per_returned_image"
+    }
+   ]
+  },
+  "grok-imagine-image-2.0": {
+   "category": "image",
+   "price": {
+    "currency": "USD",
+    "unit": "per_image",
+    "tiers": [
+     {
+      "tier": "1K",
+      "usd": 0.015
+     },
+     {
+      "tier": "2K",
+      "usd": 0.015
+     }
+    ]
+   },
+   "list_price": null,
+   "discount_vs_list": null,
+   "billing_rules": [
+    {
+     "rule": "per_returned_image"
+    }
+   ]
+  },
+  "grok-imagine-image-quality": {
+   "category": "image",
+   "price": {
+    "currency": "USD",
+    "unit": "per_image",
+    "tiers": [
+     {
+      "tier": "1K",
+      "usd": 0.015
+     },
+     {
+      "tier": "2K",
+      "usd": 0.015
+     }
+    ]
+   },
+   "list_price": null,
+   "discount_vs_list": null,
+   "billing_rules": [
+    {
+     "rule": "per_returned_image"
+    }
+   ]
+  },
+  "grok-imagine-video-1.5": {
+   "category": "video",
+   "price": {
+    "currency": "USD",
+    "unit": "per_output_second",
+    "tiers": [
+     {
+      "tier": "480p",
+      "usd": 0.064
+     },
+     {
+      "tier": "720p",
+      "usd": 0.112
+     },
+     {
+      "tier": "1080p",
+      "usd": 0.2
+     }
+    ]
+   },
+   "list_price": {
+    "currency": "USD",
+    "unit": "per_output_second",
+    "tiers": [
+     {
+      "tier": "480p",
+      "usd": 0.08
+     },
+     {
+      "tier": "720p",
+      "usd": 0.14
+     },
+     {
+      "tier": "1080p",
+      "usd": 0.25
+     }
+    ]
+   },
+   "discount_vs_list": 0.2,
+   "billing_rules": [
+    {
+     "rule": "per_output_second"
+    },
+    {
+     "rule": "failed_or_expired_not_billed"
+    }
+   ]
+  }
+ }
+}
